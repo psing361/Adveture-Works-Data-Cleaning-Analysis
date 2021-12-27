@@ -1,0 +1,3205 @@
+<!DOCTYPE html>
+<html class="ods_c831ca13-ebff-4204-b375-5f4ad08753f0" lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8"/>
+<meta content="SAS 9.4" name="generator"/>
+<title>Results: Project_BAN130.sas</title>
+<style>
+/*<![CDATA[*/
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .body.c section > table, .ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .body.c section > pre, .ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .body.c div > table,
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .body.c div > pre, .ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .body.c article > table, .ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .body.c article > pre,
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .body.j section > table, .ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .body.j section > pre, .ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .body.j div > table,
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .body.j div > pre, .ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .body.j article > table, .ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .body.j article > pre,
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .body.c p.note, .ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .body.c p.warning, .ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .body.c p.error, .ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .body.c p.fatal,
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .body.j p.note, .ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .body.j p.warning, .ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .body.j p.error, .ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .body.j p.fatal,
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .body.c > table.layoutcontainer, .ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .body.j > table.layoutcontainer { margin-left: auto; margin-right: auto }
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .layoutregion.l table, .ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .layoutregion.l pre, .ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .layoutregion.l p.note,
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .layoutregion.l p.warning, .ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .layoutregion.l p.error, .ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .layoutregion.l p.fatal { margin-left: 0 }
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .layoutregion.c table, .ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .layoutregion.c pre, .ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .layoutregion.c p.note,
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .layoutregion.c p.warning, .ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .layoutregion.c p.error, .ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .layoutregion.c p.fatal { margin-left: auto; margin-right: auto }
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .layoutregion.r table, .ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .layoutregion.r pre, .ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .layoutregion.r p.note,
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .layoutregion.r table, .ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .layoutregion.r pre, .ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .layoutregion.r p.note,
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .layoutregion.r p.warning, .ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .layoutregion.r p.error, .ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .layoutregion.r p.fatal { margin-right: 0 }
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 article, .ods_c831ca13-ebff-4204-b375-5f4ad08753f0 aside, .ods_c831ca13-ebff-4204-b375-5f4ad08753f0 details, .ods_c831ca13-ebff-4204-b375-5f4ad08753f0 figcaption, .ods_c831ca13-ebff-4204-b375-5f4ad08753f0 figure, .ods_c831ca13-ebff-4204-b375-5f4ad08753f0 footer, .ods_c831ca13-ebff-4204-b375-5f4ad08753f0 header, .ods_c831ca13-ebff-4204-b375-5f4ad08753f0 hgroup, .ods_c831ca13-ebff-4204-b375-5f4ad08753f0 nav, .ods_c831ca13-ebff-4204-b375-5f4ad08753f0 section { display: block }
+html.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 { font-size: 100% }
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .body { margin: 1em; font-size: 13px; line-height: 1.231 }
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 sup { position: relative; vertical-align: baseline; bottom: 0.25em; font-size: 0.8em }
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 sub { position: relative; vertical-align: baseline; top: 0.25em; font-size: 0.8em }
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 ul, .ods_c831ca13-ebff-4204-b375-5f4ad08753f0 ol { margin: 1em 0; padding: 0 0 0 40px }
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 dd { margin: 0 0 0 40px }
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 nav ul, .ods_c831ca13-ebff-4204-b375-5f4ad08753f0 nav ol { list-style: none; list-style-image: none; margin: 0; padding: 0 }
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 img { border: 0; vertical-align: middle }
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 svg:not(:root) { overflow: hidden }
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 figure { margin: 0 }
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 table { border-collapse: collapse; border-spacing: 0 }
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .layoutcontainer { border-collapse: separate; border-spacing: 0 }
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 p { margin-top: 0; text-align: left }
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 h1.heading1 { text-align: left }
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 h2.heading2 { text-align: left }
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 h3.heading3 { text-align: left }
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 h4.heading4 { text-align: left }
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 h5.heading5 { text-align: left }
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 h6.heading6 { text-align: left }
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 span { text-align: left }
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 table { margin-bottom: 1em }
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 td, .ods_c831ca13-ebff-4204-b375-5f4ad08753f0 th { text-align: left; padding: 3px 6px; vertical-align: top }
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 td[class$="fixed"], .ods_c831ca13-ebff-4204-b375-5f4ad08753f0 th[class$="fixed"] { white-space: pre }
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 section, .ods_c831ca13-ebff-4204-b375-5f4ad08753f0 article { padding-top: 1px; padding-bottom: 8px }
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 hr.pagebreak { height: 0px; border: 0; border-bottom: 1px solid #c0c0c0; margin: 1em 0 }
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .stacked-value { text-align: left; display: block }
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .stacked-cell > .stacked-value, .ods_c831ca13-ebff-4204-b375-5f4ad08753f0 td.data > td.data, .ods_c831ca13-ebff-4204-b375-5f4ad08753f0 th.data > td.data, .ods_c831ca13-ebff-4204-b375-5f4ad08753f0 th.data > th.data, .ods_c831ca13-ebff-4204-b375-5f4ad08753f0 td.data > th.data, .ods_c831ca13-ebff-4204-b375-5f4ad08753f0 th.header > th.header { border: 0 }
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .stacked-cell > div.data { border-width: 0 }
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .systitleandfootercontainer { white-space: nowrap; margin-bottom: 1em }
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .systitleandfootercontainer > p { margin: 0 }
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .systitleandfootercontainer > p > span { display: inline-block; width: 100%; white-space: normal }
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .batch { display: table }
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .toc { display: none }
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .proc_note_group, .ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .proc_title_group { margin-bottom: 1em }
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 p.proctitle { margin: 0 }
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 p.note, .ods_c831ca13-ebff-4204-b375-5f4ad08753f0 p.warning, .ods_c831ca13-ebff-4204-b375-5f4ad08753f0 p.error, .ods_c831ca13-ebff-4204-b375-5f4ad08753f0 p.fatal { display: table }
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .notebanner, .ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .warnbanner, .ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .errorbanner, .ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .fatalbanner,
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .notecontent, .ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .warncontent, .ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .errorcontent, .ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .fatalcontent { display: table-cell; padding: 0.5em }
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .notebanner, .ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .warnbanner, .ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .errorbanner, .ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .fatalbanner { padding-right: 0 }
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .body > div > ol li { text-align: left }
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .beforecaption > h4 { margin-top: 0; margin-bottom: 0 }
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .c { text-align: center }
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .r { text-align: right }
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .l { text-align: left }
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .j { text-align: justify }
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .d { text-align: right }
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .b { vertical-align: bottom }
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .m { vertical-align: middle }
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .t { vertical-align: top }
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .accessiblecaption {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 a:active { color: #800080 }
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .aftercaption {
+    background-color: #fafbfe;
+    border-spacing: 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+    padding-top: 4pt;
+}
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .batch > colgroup {
+    border-left: 1px solid #c1c1c1;
+    border-right: 1px solid #c1c1c1;
+}
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .batch > tbody, .ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .batch > thead, .ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .batch > tfoot {
+    border-top: 1px solid #c1c1c1;
+    border-bottom: 1px solid #c1c1c1;
+}
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .batch { border: hidden; }
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .batch {
+    background-color: #fafbfe;
+    border: 1px solid #c1c1c1;
+    border-collapse: separate;
+    border-spacing: 1px;
+    color: #000000;
+    font-family: 'SAS Monospace', 'Courier New', Courier, monospace;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    padding: 7px;
+    }
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .beforecaption {
+    background-color: #fafbfe;
+    border-spacing: 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .body {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .bodydate {
+    background-color: #fafbfe;
+    border-spacing: 0;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    text-align: right;
+    vertical-align: top;
+    width: 100%;
+}
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .bycontentfolder {
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: none;
+    margin-left: 6pt;
+}
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .byline {
+    background-color: #fafbfe;
+    border-spacing: 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .bylinecontainer > col, .ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .bylinecontainer > colgroup > col, .ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .bylinecontainer > colgroup, .ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .bylinecontainer > tr, .ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .bylinecontainer > * > tr, .ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .bylinecontainer > thead, .ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .bylinecontainer > tbody, .ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .bylinecontainer > tfoot { border: none; }
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .bylinecontainer {
+    background-color: #fafbfe;
+    border: none;
+    border-spacing: 1px;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    width: 100%;
+}
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .caption {
+    background-color: #fafbfe;
+    border-spacing: 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .cell, .ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .container {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .contentfolder, .ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .contentitem {
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: none;
+    margin-left: 6pt;
+}
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .contentproclabel, .ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .contentprocname {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .contents {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: decimal;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .contentsdate {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    width: 100%;
+}
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .contenttitle {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: bold;
+}
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .continued {
+    background-color: #fafbfe;
+    border-spacing: 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+    width: 100%;
+}
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .data, .ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .dataemphasis {
+    background-color: #ffffff;
+    border-color: #c1c1c1;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .dataemphasisfixed {
+    background-color: #ffffff;
+    border-color: #c1c1c1;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: normal;
+}
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .dataempty {
+    background-color: #ffffff;
+    border-color: #c1c1c1;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .datafixed {
+    background-color: #ffffff;
+    border-color: #c1c1c1;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    font-family: 'Courier New', Courier;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .datastrong {
+    background-color: #ffffff;
+    border-color: #c1c1c1;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .datastrongfixed {
+    background-color: #ffffff;
+    border-color: #c1c1c1;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #000000;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .date {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    width: 100%;
+}
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .document {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .errorbanner {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .errorcontent {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .errorcontentfixed {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: 'Courier New', Courier;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .extendedpage {
+    background-color: #fafbfe;
+    border-style: solid;
+    border-width: 1pt;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: normal;
+    text-align: center;
+}
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .fatalbanner {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .fatalcontent {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .fatalcontentfixed {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: 'Courier New', Courier;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .folderaction {
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: none;
+    margin-left: 6pt;
+}
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .footer {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .footeremphasis {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: normal;
+}
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .footeremphasisfixed {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: normal;
+}
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .footerempty {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .footerfixed {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: 'Courier New', Courier;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .footerstrong {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .footerstrongfixed {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .frame {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .graph > colgroup {
+    border-left: 1px solid #c1c1c1;
+    border-right: 1px solid #c1c1c1;
+}
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .graph > tbody, .ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .graph > thead, .ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .graph > tfoot {
+    border-top: 1px solid #c1c1c1;
+    border-bottom: 1px solid #c1c1c1;
+}
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .graph { border: hidden; }
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .graph {
+    background-color: #fafbfe;
+    border: 1px solid #c1c1c1;
+    border-collapse: separate;
+    border-spacing: 1px;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    }
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .header {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .headeremphasis {
+    background-color: #d8dbd3;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: normal;
+}
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .headeremphasisfixed {
+    background-color: #d8dbd3;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #000000;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: normal;
+}
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .headerempty {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .headerfixed {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: 'Courier New', Courier;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .headersandfooters {
+    background-color: #edf2f9;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .headerstrong {
+    background-color: #d8dbd3;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .headerstrongfixed {
+    background-color: #d8dbd3;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #000000;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .heading1, .ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .heading2, .ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .heading3, .ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .heading4, .ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .heading5, .ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .heading6 { font-family: Arial, Helvetica, sans-serif }
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .index {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .indexaction, .ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .indexitem {
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: none;
+    margin-left: 6pt;
+}
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .indexprocname {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .indextitle {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: bold;
+}
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .layoutcontainer, .ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .layoutregion {
+    border-width: 0;
+    border-spacing: 30px;
+}
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .linecontent {
+    background-color: #fafbfe;
+    border-color: #c1c1c1;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 a:link { color: #0000ff }
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .list {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: disc;
+}
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .list10 {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: square;
+}
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .list2 {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: circle;
+}
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .list3, .ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .list4, .ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .list5, .ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .list6, .ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .list7, .ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .list8, .ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .list9 {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: square;
+}
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .listitem {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: disc;
+}
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .listitem10 {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: square;
+}
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .listitem2 {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: circle;
+}
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .listitem3, .ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .listitem4, .ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .listitem5, .ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .listitem6, .ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .listitem7, .ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .listitem8, .ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .listitem9 {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: square;
+}
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .note {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .notebanner {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .notecontent {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .notecontentfixed {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: 'Courier New', Courier;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .output > colgroup {
+    border-left: 1px solid #c1c1c1;
+    border-right: 1px solid #c1c1c1;
+}
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .output > tbody, .ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .output > thead, .ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .output > tfoot {
+    border-top: 1px solid #c1c1c1;
+    border-bottom: 1px solid #c1c1c1;
+}
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .output { border: hidden; }
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .output {
+    background-color: #fafbfe;
+    border: 1px solid #c1c1c1;
+    border-collapse: separate;
+    border-spacing: 1px;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    }
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .pageno {
+    background-color: #fafbfe;
+    border-spacing: 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+    text-align: right;
+    vertical-align: top;
+}
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .pages {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: decimal;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .pagesdate {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    width: 100%;
+}
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .pagesitem {
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    list-style-type: none;
+    margin-left: 6pt;
+}
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .pagesproclabel, .ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .pagesprocname {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .pagestitle {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: bold;
+}
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .paragraph {
+    background-color: #fafbfe;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .parskip > col, .ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .parskip > colgroup > col, .ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .parskip > colgroup, .ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .parskip > tr, .ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .parskip > * > tr, .ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .parskip > thead, .ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .parskip > tbody, .ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .parskip > tfoot { border: none; }
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .parskip {
+    border: none;
+    border-spacing: 0;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+    }
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .prepage {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    text-align: left;
+}
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .proctitle {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .proctitlefixed {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .rowfooter {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .rowfooteremphasis {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: normal;
+}
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .rowfooteremphasisfixed {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: normal;
+}
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .rowfooterempty {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .rowfooterfixed {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: 'Courier New', Courier;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .rowfooterstrong {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .rowfooterstrongfixed {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .rowheader {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .rowheaderemphasis {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: normal;
+}
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .rowheaderemphasisfixed {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-small;
+    font-style: italic;
+    font-weight: normal;
+}
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .rowheaderempty {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .rowheaderfixed {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: 'Courier New', Courier;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .rowheaderstrong {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .rowheaderstrongfixed {
+    background-color: #edf2f9;
+    border-color: #b0b7bb;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #112277;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .systemfooter, .ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .systemfooter10, .ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .systemfooter2, .ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .systemfooter3, .ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .systemfooter4, .ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .systemfooter5, .ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .systemfooter6, .ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .systemfooter7, .ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .systemfooter8, .ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .systemfooter9 {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .systemtitle, .ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .systemtitle10, .ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .systemtitle2, .ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .systemtitle3, .ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .systemtitle4, .ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .systemtitle5, .ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .systemtitle6, .ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .systemtitle7, .ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .systemtitle8, .ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .systemtitle9 {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .systitleandfootercontainer > col, .ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .systitleandfootercontainer > colgroup > col, .ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .systitleandfootercontainer > colgroup, .ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .systitleandfootercontainer > tr, .ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .systitleandfootercontainer > * > tr, .ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .systitleandfootercontainer > thead, .ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .systitleandfootercontainer > tbody, .ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .systitleandfootercontainer > tfoot { border: none; }
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .systitleandfootercontainer {
+    background-color: #fafbfe;
+    border: none;
+    border-spacing: 1px;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    width: 100%;
+}
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .table > col, .ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .table > colgroup > col {
+    border-left: 1px solid #c1c1c1;
+    border-right: 0 solid #c1c1c1;
+}
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .table > tr, .ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .table > * > tr {
+    border-top: 1px solid #c1c1c1;
+    border-bottom: 0 solid #c1c1c1;
+}
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .table { border: hidden; }
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .table {
+    border-color: #c1c1c1;
+    border-style: solid;
+    border-width: 1px 0 0 1px;
+    border-collapse: collapse;
+    border-spacing: 0;
+    }
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .titleandnotecontainer > col, .ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .titleandnotecontainer > colgroup > col, .ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .titleandnotecontainer > colgroup, .ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .titleandnotecontainer > tr, .ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .titleandnotecontainer > * > tr, .ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .titleandnotecontainer > thead, .ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .titleandnotecontainer > tbody, .ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .titleandnotecontainer > tfoot { border: none; }
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .titleandnotecontainer {
+    background-color: #fafbfe;
+    border: none;
+    border-spacing: 1px;
+    color: #000000;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+    width: 100%;
+}
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .titlesandfooters {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .usertext {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 a:visited { color: #800080 }
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .warnbanner {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: bold;
+}
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .warncontent {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: Arial, 'Albany AMT', Helvetica, Helv;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+.ods_c831ca13-ebff-4204-b375-5f4ad08753f0 .warncontentfixed {
+    background-color: #fafbfe;
+    color: #112277;
+    font-family: 'Courier New', Courier;
+    font-size: x-small;
+    font-style: normal;
+    font-weight: normal;
+}
+/*]]>*/
+</style>
+</head>
+<body class="body">
+<div id="div_c831ca13-ebff-4204-b375-5f4ad08753f0" class="c body">
+<h1 class="body toc">Results: Project_BAN130.sas</h1>
+<section data-name="Print" data-sec-type="proc">
+<div id="IDX" class="systitleandfootercontainer" style="border-spacing: 1px">
+<p><span class="c systemtitle">Importing Product Sheet</span> </p>
+</div>
+<h1 class="contentprocname toc">The Print Procedure</h1>
+<article aria-label="Data Set MYLIB.ADVENTUREWORKS_PRODUCT">
+<h1 class="contentitem toc">Data Set MYLIB.ADVENTUREWORKS_PRODUCT</h1>
+<table class="table" style="border-spacing: 0" aria-label="Data Set MYLIB.ADVENTUREWORKS_PRODUCT">
+<caption aria-label="Data Set MYLIB.ADVENTUREWORKS_PRODUCT"></caption>
+<colgroup><col/></colgroup><colgroup><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="r header" scope="col">Obs</th>
+<th class="header" scope="col">ProductID</th>
+<th class="header" scope="col">Name</th>
+<th class="header" scope="col">ProductNumber</th>
+<th class="header" scope="col">MakeFlag</th>
+<th class="header" scope="col">FinishedGoodsFlag</th>
+<th class="header" scope="col">Color</th>
+<th class="header" scope="col">SafetyStockLevel</th>
+<th class="header" scope="col">ReorderPoint</th>
+<th class="header" scope="col">StandardCost</th>
+<th class="header" scope="col">ListPrice</th>
+<th class="header" scope="col">Size</th>
+<th class="header" scope="col">SizeUnitMeasureCode</th>
+<th class="header" scope="col">WeightUnitMeasureCode</th>
+<th class="header" scope="col">Weight</th>
+<th class="header" scope="col">DaysToManufacture</th>
+<th class="header" scope="col">ProductLine</th>
+<th class="header" scope="col">Class</th>
+<th class="header" scope="col">Style</th>
+<th class="header" scope="col">ProductSubcategoryID</th>
+<th class="header" scope="col">ProductModelID</th>
+<th class="header" scope="col">SellStartDate</th>
+<th class="header" scope="col">SellEndDate</th>
+<th class="header" scope="col">DiscontinuedDate</th>
+<th class="header" scope="col">rowguid</th>
+<th class="header" scope="col">ModifiedDate</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r rowheader" scope="row">1</th>
+<td class="data">1</td>
+<td class="data">Adjustable Race</td>
+<td class="data">AR-5381</td>
+<td class="data">0</td>
+<td class="data">0</td>
+<td class="data"> &#160;</td>
+<td class="data">1000</td>
+<td class="data">750</td>
+<td class="data">0</td>
+<td class="data">0</td>
+<td class="data"> &#160;</td>
+<td class="data"> &#160;</td>
+<td class="data"> &#160;</td>
+<td class="data"> &#160;</td>
+<td class="data">0</td>
+<td class="data"> &#160;</td>
+<td class="data"> &#160;</td>
+<td class="data"> &#160;</td>
+<td class="data"> &#160;</td>
+<td class="data"> &#160;</td>
+<td class="data">2008-04-30 00:00:00</td>
+<td class="data"> &#160;</td>
+<td class="data"> &#160;</td>
+<td class="data">{694215B7-08F7-4C0D-ACB1-D734BA44C0C8}</td>
+<td class="data">2014-02-08 10:01:36.827000000</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">2</th>
+<td class="data">2</td>
+<td class="data">Bearing Ball</td>
+<td class="data">BA-8327</td>
+<td class="data">0</td>
+<td class="data">0</td>
+<td class="data"> &#160;</td>
+<td class="data">1000</td>
+<td class="data">750</td>
+<td class="data">0</td>
+<td class="data">0</td>
+<td class="data"> &#160;</td>
+<td class="data"> &#160;</td>
+<td class="data"> &#160;</td>
+<td class="data"> &#160;</td>
+<td class="data">0</td>
+<td class="data"> &#160;</td>
+<td class="data"> &#160;</td>
+<td class="data"> &#160;</td>
+<td class="data"> &#160;</td>
+<td class="data"> &#160;</td>
+<td class="data">2008-04-30 00:00:00</td>
+<td class="data"> &#160;</td>
+<td class="data"> &#160;</td>
+<td class="data">{58AE3C20-4F3A-4749-A7D4-D568806CC537}</td>
+<td class="data">2014-02-08 10:01:36.827000000</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">3</th>
+<td class="data">3</td>
+<td class="data">BB Ball Bearing</td>
+<td class="data">BE-2349</td>
+<td class="data" style="white-space: nowrap">-1</td>
+<td class="data">0</td>
+<td class="data"> &#160;</td>
+<td class="data">800</td>
+<td class="data">600</td>
+<td class="data">0</td>
+<td class="data">0</td>
+<td class="data"> &#160;</td>
+<td class="data"> &#160;</td>
+<td class="data"> &#160;</td>
+<td class="data"> &#160;</td>
+<td class="data">1</td>
+<td class="data"> &#160;</td>
+<td class="data"> &#160;</td>
+<td class="data"> &#160;</td>
+<td class="data"> &#160;</td>
+<td class="data"> &#160;</td>
+<td class="data">2008-04-30 00:00:00</td>
+<td class="data"> &#160;</td>
+<td class="data"> &#160;</td>
+<td class="data">{9C21AED2-5BFA-4F18-BCB8-F11638DC2E4E}</td>
+<td class="data">2014-02-08 10:01:36.827000000</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">4</th>
+<td class="data">4</td>
+<td class="data">Headset Ball Bearings</td>
+<td class="data">BE-2908</td>
+<td class="data">0</td>
+<td class="data">0</td>
+<td class="data"> &#160;</td>
+<td class="data">800</td>
+<td class="data">600</td>
+<td class="data">0</td>
+<td class="data">0</td>
+<td class="data"> &#160;</td>
+<td class="data"> &#160;</td>
+<td class="data"> &#160;</td>
+<td class="data"> &#160;</td>
+<td class="data">0</td>
+<td class="data"> &#160;</td>
+<td class="data"> &#160;</td>
+<td class="data"> &#160;</td>
+<td class="data"> &#160;</td>
+<td class="data"> &#160;</td>
+<td class="data">2008-04-30 00:00:00</td>
+<td class="data"> &#160;</td>
+<td class="data"> &#160;</td>
+<td class="data">{ECFED6CB-51FF-49B5-B06C-7D8AC834DB8B}</td>
+<td class="data">2014-02-08 10:01:36.827000000</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">5</th>
+<td class="data">316</td>
+<td class="data">Blade</td>
+<td class="data">BL-2036</td>
+<td class="data" style="white-space: nowrap">-1</td>
+<td class="data">0</td>
+<td class="data"> &#160;</td>
+<td class="data">800</td>
+<td class="data">600</td>
+<td class="data">0</td>
+<td class="data">0</td>
+<td class="data"> &#160;</td>
+<td class="data"> &#160;</td>
+<td class="data"> &#160;</td>
+<td class="data"> &#160;</td>
+<td class="data">1</td>
+<td class="data"> &#160;</td>
+<td class="data"> &#160;</td>
+<td class="data"> &#160;</td>
+<td class="data"> &#160;</td>
+<td class="data"> &#160;</td>
+<td class="data">2008-04-30 00:00:00</td>
+<td class="data"> &#160;</td>
+<td class="data"> &#160;</td>
+<td class="data">{E73E9750-603B-4131-89F5-3DD15ED5FF80}</td>
+<td class="data">2014-02-08 10:01:36.827000000</td>
+</tr>
+</tbody>
+</table>
+</article>
+</section>
+<section data-name="Print" data-sec-type="proc">
+<hr class="pagebreak"/>
+<div id="IDX1" class="systitleandfootercontainer" style="border-spacing: 1px">
+<p><span class="c systemtitle">Importing SalesOrderDetail Sheet</span> </p>
+</div>
+<h1 class="contentprocname toc">The Print Procedure</h1>
+<article aria-label="Data Set MYLIB.ADVENTUREWORKS_SALES">
+<h1 class="contentitem toc">Data Set MYLIB.ADVENTUREWORKS_SALES</h1>
+<table class="table" style="border-spacing: 0" aria-label="Data Set MYLIB.ADVENTUREWORKS_SALES">
+<caption aria-label="Data Set MYLIB.ADVENTUREWORKS_SALES"></caption>
+<colgroup><col/></colgroup><colgroup><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="r header" scope="col">Obs</th>
+<th class="header" scope="col">SalesOrderID</th>
+<th class="header" scope="col">SalesOrderDetailID</th>
+<th class="header" scope="col">CarrierTrackingNumber</th>
+<th class="header" scope="col">OrderQty</th>
+<th class="header" scope="col">ProductID</th>
+<th class="header" scope="col">SpecialOfferID</th>
+<th class="header" scope="col">UnitPrice</th>
+<th class="header" scope="col">UnitPriceDiscount</th>
+<th class="header" scope="col">LineTotal</th>
+<th class="header" scope="col">rowguid</th>
+<th class="header" scope="col">ModifiedDate</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r rowheader" scope="row">1</th>
+<td class="data">43659</td>
+<td class="data">1</td>
+<td class="data">4911-403C-98</td>
+<td class="data">1</td>
+<td class="data">776</td>
+<td class="data">1</td>
+<td class="data">2024.994</td>
+<td class="data">0</td>
+<td class="data">2024.994000</td>
+<td class="data">{B207C96D-D9E6-402B-8470-2CC176C42283}</td>
+<td class="data">2011-05-31 00:00:00</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">2</th>
+<td class="data">43659</td>
+<td class="data">2</td>
+<td class="data">4911-403C-98</td>
+<td class="data">3</td>
+<td class="data">777</td>
+<td class="data">1</td>
+<td class="data">2024.994</td>
+<td class="data">0</td>
+<td class="data">6074.982000</td>
+<td class="data">{7ABB600D-1E77-41BE-9FE5-B9142CFC08FA}</td>
+<td class="data">2011-05-31 00:00:00</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">3</th>
+<td class="data">43659</td>
+<td class="data">3</td>
+<td class="data">4911-403C-98</td>
+<td class="data">1</td>
+<td class="data">778</td>
+<td class="data">1</td>
+<td class="data">2024.994</td>
+<td class="data">0</td>
+<td class="data">2024.994000</td>
+<td class="data">{475CF8C6-49F6-486E-B0AD-AFC6A50CDD2F}</td>
+<td class="data">2011-05-31 00:00:00</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">4</th>
+<td class="data">43659</td>
+<td class="data">4</td>
+<td class="data">4911-403C-98</td>
+<td class="data">1</td>
+<td class="data">771</td>
+<td class="data">1</td>
+<td class="data">2039.994</td>
+<td class="data">0</td>
+<td class="data">2039.994000</td>
+<td class="data">{04C4DE91-5815-45D6-8670-F462719FBCE3}</td>
+<td class="data">2011-05-31 00:00:00</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">5</th>
+<td class="data">43659</td>
+<td class="data">5</td>
+<td class="data">4911-403C-98</td>
+<td class="data">1</td>
+<td class="data">772</td>
+<td class="data">1</td>
+<td class="data">2039.994</td>
+<td class="data">0</td>
+<td class="data">2039.994000</td>
+<td class="data">{5A74C7D2-E641-438E-A7AC-37BF23280301}</td>
+<td class="data">2011-05-31 00:00:00</td>
+</tr>
+</tbody>
+</table>
+</article>
+</section>
+<section data-name="Print" data-sec-type="proc">
+<hr class="pagebreak"/>
+<div id="IDX2" class="systitleandfootercontainer" style="border-spacing: 1px">
+<p><span class="c systemtitle">Cleaned Data of Prodcut Sheet</span> </p>
+</div>
+<h1 class="contentprocname toc">The Print Procedure</h1>
+<article aria-label="Data Set WORK.PRODUCT_CLEAN">
+<h1 class="contentitem toc">Data Set WORK.PRODUCT_CLEAN</h1>
+<table class="table" style="border-spacing: 0" aria-label="Data Set WORK.PRODUCT_CLEAN">
+<caption aria-label="Data Set WORK.PRODUCT_CLEAN"></caption>
+<colgroup><col/><col/><col/><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="header" scope="col">ProductID</th>
+<th class="header" scope="col">Name</th>
+<th class="header" scope="col">ProductNumber</th>
+<th class="header" scope="col">Color</th>
+<th class="r header" scope="col">ListPrice</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="data">1</td>
+<td class="data">Adjustable Race</td>
+<td class="data">AR-5381</td>
+<td class="data">NA</td>
+<td class="r data">$0.00</td>
+</tr>
+<tr>
+<td class="data">2</td>
+<td class="data">Bearing Ball</td>
+<td class="data">BA-8327</td>
+<td class="data">NA</td>
+<td class="r data">$0.00</td>
+</tr>
+<tr>
+<td class="data">3</td>
+<td class="data">BB Ball Bearing</td>
+<td class="data">BE-2349</td>
+<td class="data">NA</td>
+<td class="r data">$0.00</td>
+</tr>
+<tr>
+<td class="data">4</td>
+<td class="data">Headset Ball Bearings</td>
+<td class="data">BE-2908</td>
+<td class="data">NA</td>
+<td class="r data">$0.00</td>
+</tr>
+<tr>
+<td class="data">316</td>
+<td class="data">Blade</td>
+<td class="data">BL-2036</td>
+<td class="data">NA</td>
+<td class="r data">$0.00</td>
+</tr>
+<tr>
+<td class="data">317</td>
+<td class="data">LL Crankarm</td>
+<td class="data">CA-5965</td>
+<td class="data">Black</td>
+<td class="r data">$0.00</td>
+</tr>
+<tr>
+<td class="data">318</td>
+<td class="data">ML Crankarm</td>
+<td class="data">CA-6738</td>
+<td class="data">Black</td>
+<td class="r data">$0.00</td>
+</tr>
+<tr>
+<td class="data">319</td>
+<td class="data">HL Crankarm</td>
+<td class="data">CA-7457</td>
+<td class="data">Black</td>
+<td class="r data">$0.00</td>
+</tr>
+<tr>
+<td class="data">320</td>
+<td class="data">Chainring Bolts</td>
+<td class="data">CB-2903</td>
+<td class="data">Silver</td>
+<td class="r data">$0.00</td>
+</tr>
+<tr>
+<td class="data">321</td>
+<td class="data">Chainring Nut</td>
+<td class="data">CN-6137</td>
+<td class="data">Silver</td>
+<td class="r data">$0.00</td>
+</tr>
+</tbody>
+</table>
+</article>
+</section>
+<section data-name="Print" data-sec-type="proc">
+<hr class="pagebreak"/>
+<div id="IDX3" class="systitleandfootercontainer" style="border-spacing: 1px">
+<p><span class="c systemtitle">Cleaned Data of SalesOrder Sheet</span> </p>
+</div>
+<h1 class="contentprocname toc">The Print Procedure</h1>
+<article aria-label="Data Set WORK.SALESORDERDETAIL_CLEAN">
+<h1 class="contentitem toc">Data Set WORK.SALESORDERDETAIL_CLEAN</h1>
+<table class="table" style="border-spacing: 0" aria-label="Data Set WORK.SALESORDERDETAIL_CLEAN">
+<caption aria-label="Data Set WORK.SALESORDERDETAIL_CLEAN"></caption>
+<colgroup><col/></colgroup><colgroup><col/><col/><col/><col/><col/><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="r header" scope="col">Obs</th>
+<th class="header" scope="col">SalesOrderID</th>
+<th class="header" scope="col">SalesOrderDetailID</th>
+<th class="header" scope="col">ProductID</th>
+<th class="r header" scope="col">UnitPrice</th>
+<th class="r header" scope="col">LineTotal</th>
+<th class="r header" scope="col">OrderQty</th>
+<th class="r header" scope="col">ModifiedDate</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r rowheader" scope="row">1</th>
+<td class="data">49181</td>
+<td class="data">27406</td>
+<td class="data">794</td>
+<td class="r data">$2181.56</td>
+<td class="r data">$2181.56</td>
+<td class="r data">1</td>
+<td class="r data">01/01/2013</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">2</th>
+<td class="data">49182</td>
+<td class="data">27407</td>
+<td class="data">790</td>
+<td class="r data">$2443.35</td>
+<td class="r data">$2443.35</td>
+<td class="r data">1</td>
+<td class="r data">01/01/2013</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">3</th>
+<td class="data">49183</td>
+<td class="data">27408</td>
+<td class="data">791</td>
+<td class="r data">$2443.35</td>
+<td class="r data">$2443.35</td>
+<td class="r data">1</td>
+<td class="r data">01/01/2013</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">4</th>
+<td class="data">49184</td>
+<td class="data">27409</td>
+<td class="data">784</td>
+<td class="r data">$2049.10</td>
+<td class="r data">$2049.10</td>
+<td class="r data">1</td>
+<td class="r data">01/01/2013</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">5</th>
+<td class="data">49185</td>
+<td class="data">27410</td>
+<td class="data">784</td>
+<td class="r data">$2049.10</td>
+<td class="r data">$2049.10</td>
+<td class="r data">1</td>
+<td class="r data">01/01/2013</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">6</th>
+<td class="data">49186</td>
+<td class="data">27411</td>
+<td class="data">791</td>
+<td class="r data">$2443.35</td>
+<td class="r data">$2443.35</td>
+<td class="r data">1</td>
+<td class="r data">01/01/2013</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">7</th>
+<td class="data">49187</td>
+<td class="data">27412</td>
+<td class="data">796</td>
+<td class="r data">$2181.56</td>
+<td class="r data">$2181.56</td>
+<td class="r data">1</td>
+<td class="r data">01/01/2013</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">8</th>
+<td class="data">49188</td>
+<td class="data">27413</td>
+<td class="data">782</td>
+<td class="r data">$2049.10</td>
+<td class="r data">$2049.10</td>
+<td class="r data">1</td>
+<td class="r data">01/01/2013</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">9</th>
+<td class="data">49189</td>
+<td class="data">27414</td>
+<td class="data">769</td>
+<td class="r data">$782.99</td>
+<td class="r data">$782.99</td>
+<td class="r data">1</td>
+<td class="r data">01/01/2013</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">10</th>
+<td class="data">49190</td>
+<td class="data">27415</td>
+<td class="data">798</td>
+<td class="r data">$1000.44</td>
+<td class="r data">$1000.44</td>
+<td class="r data">1</td>
+<td class="r data">01/01/2013</td>
+</tr>
+</tbody>
+</table>
+</article>
+</section>
+<section data-name="Print" data-sec-type="proc">
+<hr class="pagebreak"/>
+<div id="IDX4" class="systitleandfootercontainer" style="border-spacing: 1px">
+<p><span class="c systemtitle">Merged Data</span> </p>
+</div>
+<h1 class="contentprocname toc">The Print Procedure</h1>
+<article aria-label="Data Set WORK.SALESDETAILS">
+<h1 class="contentitem toc">Data Set WORK.SALESDETAILS</h1>
+<table class="table" style="border-spacing: 0" aria-label="Data Set WORK.SALESDETAILS">
+<caption aria-label="Data Set WORK.SALESDETAILS"></caption>
+<colgroup><col/></colgroup><colgroup><col/><col/><col/><col/><col/><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="r header" scope="col">Obs</th>
+<th class="header" scope="col">ProductID</th>
+<th class="header" scope="col">Name</th>
+<th class="header" scope="col">Color</th>
+<th class="r header" scope="col">UnitPrice</th>
+<th class="r header" scope="col">LineTotal</th>
+<th class="r header" scope="col">OrderQty</th>
+<th class="r header" scope="col">ModifiedDate</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r rowheader" scope="row">1</th>
+<td class="data">707</td>
+<td class="data">Sport-100 Helmet, Red</td>
+<td class="data">Red</td>
+<td class="r data">$20.19</td>
+<td class="r data">$80.75</td>
+<td class="r data">4</td>
+<td class="r data">01/28/2013</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">2</th>
+<td class="data">707</td>
+<td class="data">Sport-100 Helmet, Red</td>
+<td class="data">Red</td>
+<td class="r data">$20.19</td>
+<td class="r data">$60.56</td>
+<td class="r data">3</td>
+<td class="r data">01/28/2013</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">3</th>
+<td class="data">707</td>
+<td class="data">Sport-100 Helmet, Red</td>
+<td class="data">Red</td>
+<td class="r data">$20.19</td>
+<td class="r data">$60.56</td>
+<td class="r data">3</td>
+<td class="r data">01/28/2013</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">4</th>
+<td class="data">707</td>
+<td class="data">Sport-100 Helmet, Red</td>
+<td class="data">Red</td>
+<td class="r data">$20.19</td>
+<td class="r data">$121.12</td>
+<td class="r data">6</td>
+<td class="r data">01/28/2013</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">5</th>
+<td class="data">707</td>
+<td class="data">Sport-100 Helmet, Red</td>
+<td class="data">Red</td>
+<td class="r data">$20.19</td>
+<td class="r data">$40.37</td>
+<td class="r data">2</td>
+<td class="r data">01/28/2013</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">6</th>
+<td class="data">707</td>
+<td class="data">Sport-100 Helmet, Red</td>
+<td class="data">Red</td>
+<td class="r data">$20.19</td>
+<td class="r data">$201.87</td>
+<td class="r data">10</td>
+<td class="r data">01/28/2013</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">7</th>
+<td class="data">707</td>
+<td class="data">Sport-100 Helmet, Red</td>
+<td class="data">Red</td>
+<td class="r data">$20.19</td>
+<td class="r data">$20.19</td>
+<td class="r data">1</td>
+<td class="r data">01/28/2013</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">8</th>
+<td class="data">707</td>
+<td class="data">Sport-100 Helmet, Red</td>
+<td class="data">Red</td>
+<td class="r data">$20.19</td>
+<td class="r data">$100.93</td>
+<td class="r data">5</td>
+<td class="r data">01/28/2013</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">9</th>
+<td class="data">707</td>
+<td class="data">Sport-100 Helmet, Red</td>
+<td class="data">Red</td>
+<td class="r data">$20.19</td>
+<td class="r data">$20.19</td>
+<td class="r data">1</td>
+<td class="r data">01/28/2013</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">10</th>
+<td class="data">707</td>
+<td class="data">Sport-100 Helmet, Red</td>
+<td class="data">Red</td>
+<td class="r data">$20.19</td>
+<td class="r data">$100.93</td>
+<td class="r data">5</td>
+<td class="r data">01/28/2013</td>
+</tr>
+</tbody>
+</table>
+</article>
+</section>
+<section data-name="Print" data-sec-type="proc">
+<hr class="pagebreak"/>
+<div id="IDX5" class="systitleandfootercontainer" style="border-spacing: 1px">
+<p><span class="c systemtitle">Sales Analysis with SubTotal Value</span> </p>
+</div>
+<h1 class="contentprocname toc">The Print Procedure</h1>
+<article aria-label="Data Set WORK.SALESANALYSIS">
+<h1 class="contentitem toc">Data Set WORK.SALESANALYSIS</h1>
+<table class="table" style="border-spacing: 0" aria-label="Data Set WORK.SALESANALYSIS">
+<caption aria-label="Data Set WORK.SALESANALYSIS"></caption>
+<colgroup><col/></colgroup><colgroup><col/><col/><col/><col/><col/><col/><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="r header" scope="col">Obs</th>
+<th class="header" scope="col">ProductID</th>
+<th class="header" scope="col">Name</th>
+<th class="header" scope="col">Color</th>
+<th class="r header" scope="col">UnitPrice</th>
+<th class="r header" scope="col">LineTotal</th>
+<th class="r header" scope="col">OrderQty</th>
+<th class="r header" scope="col">ModifiedDate</th>
+<th class="r header" scope="col">SubTotal</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r rowheader" scope="row">1</th>
+<td class="data">707</td>
+<td class="data">Sport-100 Helmet, Red</td>
+<td class="data">Red</td>
+<td class="r data">$34.99</td>
+<td class="r data">$34.99</td>
+<td class="r data">1</td>
+<td class="r data">06/30/2014</td>
+<td class="r data">126263.88</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">2</th>
+<td class="data">708</td>
+<td class="data">Sport-100 Helmet, Black</td>
+<td class="data">Black</td>
+<td class="r data">$34.99</td>
+<td class="r data">$34.99</td>
+<td class="r data">1</td>
+<td class="r data">06/30/2014</td>
+<td class="r data">126940.27</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">3</th>
+<td class="data">711</td>
+<td class="data">Sport-100 Helmet, Blue</td>
+<td class="data">Blue</td>
+<td class="r data">$34.99</td>
+<td class="r data">$34.99</td>
+<td class="r data">1</td>
+<td class="r data">06/30/2014</td>
+<td class="r data">128596.19</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">4</th>
+<td class="data">712</td>
+<td class="data">AWC Logo Cap</td>
+<td class="data">Multi</td>
+<td class="r data">$8.99</td>
+<td class="r data">$8.99</td>
+<td class="r data">1</td>
+<td class="r data">06/30/2014</td>
+<td class="r data">38013.93</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">5</th>
+<td class="data">713</td>
+<td class="data">Long-Sleeve Logo Jersey, S</td>
+<td class="data">Multi</td>
+<td class="r data">$49.99</td>
+<td class="r data">$49.99</td>
+<td class="r data">1</td>
+<td class="r data">06/30/2014</td>
+<td class="r data">21445.71</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">6</th>
+<td class="data">714</td>
+<td class="data">Long-Sleeve Logo Jersey, M</td>
+<td class="data">Multi</td>
+<td class="r data">$49.99</td>
+<td class="r data">$49.99</td>
+<td class="r data">1</td>
+<td class="r data">06/30/2014</td>
+<td class="r data">77087.41</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">7</th>
+<td class="data">715</td>
+<td class="data">Long-Sleeve Logo Jersey, L</td>
+<td class="data">Multi</td>
+<td class="r data">$49.99</td>
+<td class="r data">$49.99</td>
+<td class="r data">1</td>
+<td class="r data">06/30/2014</td>
+<td class="r data">123614.75</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">8</th>
+<td class="data">716</td>
+<td class="data">Long-Sleeve Logo Jersey, XL</td>
+<td class="data">Multi</td>
+<td class="r data">$49.99</td>
+<td class="r data">$49.99</td>
+<td class="r data">1</td>
+<td class="r data">06/30/2014</td>
+<td class="r data">58127.87</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">9</th>
+<td class="data">717</td>
+<td class="data">HL Road Frame - Red, 62</td>
+<td class="data">Red</td>
+<td class="r data">$858.90</td>
+<td class="r data">$1717.80</td>
+<td class="r data">2</td>
+<td class="r data">05/01/2014</td>
+<td class="r data">219253.74</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">10</th>
+<td class="data">718</td>
+<td class="data">HL Road Frame - Red, 44</td>
+<td class="data">Red</td>
+<td class="r data">$858.90</td>
+<td class="r data">$858.90</td>
+<td class="r data">1</td>
+<td class="r data">05/01/2014</td>
+<td class="r data">220112.64</td>
+</tr>
+</tbody>
+</table>
+</article>
+</section>
+<section data-name="Print" data-sec-type="proc">
+<hr class="pagebreak"/>
+<div id="IDX6" class="systitleandfootercontainer" style="border-spacing: 1px">
+<p><span class="c systemtitle">Answer1: Red color Helmets sold in 2013 and 2014</span> </p>
+</div>
+<h1 class="contentprocname toc">The Print Procedure</h1>
+<article aria-label="Data Set WORK.SALESANALYSIS1">
+<h1 class="contentitem toc">Data Set WORK.SALESANALYSIS1</h1>
+<table class="table" style="border-spacing: 0" aria-label="Data Set WORK.SALESANALYSIS1">
+<caption aria-label="Data Set WORK.SALESANALYSIS1"></caption>
+<colgroup><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="header" scope="col">Name</th>
+<th class="r header" scope="col">QtyTotal</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="data">Sport-100 Helmet, Red</td>
+<td class="r data">4657</td>
+</tr>
+</tbody>
+</table>
+</article>
+</section>
+<section data-name="Print" data-sec-type="proc">
+<hr class="pagebreak"/>
+<div id="IDX7" class="systitleandfootercontainer" style="border-spacing: 1px">
+<p><span class="c systemtitle">Answer2: Number of Items sold in 2013 and 2014 have a Multi color</span> </p>
+</div>
+<h1 class="contentprocname toc">The Print Procedure</h1>
+<article aria-label="Data Set WORK.SALESANALYSIS1">
+<h1 class="contentitem toc">Data Set WORK.SALESANALYSIS1</h1>
+<table class="table" style="border-spacing: 0" aria-label="Data Set WORK.SALESANALYSIS1">
+<caption aria-label="Data Set WORK.SALESANALYSIS1"></caption>
+<colgroup><col/><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="header" scope="col">Name</th>
+<th class="header" scope="col">Color</th>
+<th class="r header" scope="col">QtyTotal</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="data">AWC Logo Cap</td>
+<td class="data">Multi</td>
+<td class="r data">5718</td>
+</tr>
+<tr>
+<td class="data">Long-Sleeve Logo Jersey, S</td>
+<td class="data">Multi</td>
+<td class="r data">429</td>
+</tr>
+<tr>
+<td class="data">Long-Sleeve Logo Jersey, M</td>
+<td class="data">Multi</td>
+<td class="r data">2307</td>
+</tr>
+<tr>
+<td class="data">Long-Sleeve Logo Jersey, L</td>
+<td class="data">Multi</td>
+<td class="r data">3935</td>
+</tr>
+<tr>
+<td class="data">Long-Sleeve Logo Jersey, XL</td>
+<td class="data">Multi</td>
+<td class="r data">1676</td>
+</tr>
+<tr>
+<td class="data">Men&apos;s Bib-Shorts, S</td>
+<td class="data">Multi</td>
+<td class="r data">292</td>
+</tr>
+<tr>
+<td class="data">Men&apos;s Bib-Shorts, M</td>
+<td class="data">Multi</td>
+<td class="r data">491</td>
+</tr>
+<tr>
+<td class="data">Men&apos;s Bib-Shorts, L</td>
+<td class="data">Multi</td>
+<td class="r data">161</td>
+</tr>
+<tr>
+<th class="header" scope="col"> &#160;</th>
+<th class="header" scope="col"> &#160;</th>
+<th class="r header" scope="col">15009</th>
+</tr>
+</tbody>
+</table>
+</article>
+</section>
+<section data-name="Print" data-sec-type="proc">
+<hr class="pagebreak"/>
+<div id="IDX8" class="systitleandfootercontainer" style="border-spacing: 1px">
+<p><span class="c systemtitle">Answer3: The combined Sales total for all the helmets sold in 2013 and 2014</span> </p>
+</div>
+<h1 class="contentprocname toc">The Print Procedure</h1>
+<article aria-label="Data Set WORK.SALESANALYSIS1">
+<h1 class="contentitem toc">Data Set WORK.SALESANALYSIS1</h1>
+<table class="table" style="border-spacing: 0" aria-label="Data Set WORK.SALESANALYSIS1">
+<caption aria-label="Data Set WORK.SALESANALYSIS1"></caption>
+<colgroup><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="header" scope="col">Name</th>
+<th class="r header" scope="col">QtyTotal</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="data">Sport-100 Helmet, Red</td>
+<td class="r data">4657</td>
+</tr>
+<tr>
+<td class="data">Sport-100 Helmet, Black</td>
+<td class="r data">4804</td>
+</tr>
+<tr>
+<td class="data">Sport-100 Helmet, Blue</td>
+<td class="r data">4864</td>
+</tr>
+<tr>
+<th class="header" scope="col"> &#160;</th>
+<th class="r header" scope="col">14325</th>
+</tr>
+</tbody>
+</table>
+</article>
+</section>
+<section data-name="Print" data-sec-type="proc">
+<hr class="pagebreak"/>
+<div id="IDX9" class="systitleandfootercontainer" style="border-spacing: 1px">
+<p><span class="c systemtitle">Answer4: The number of Yellow Color Touring-1000 sold in 2013 and 2014</span> </p>
+</div>
+<h1 class="contentprocname toc">The Print Procedure</h1>
+<article aria-label="Data Set WORK.SALESANALYSIS1">
+<h1 class="contentitem toc">Data Set WORK.SALESANALYSIS1</h1>
+<table class="table" style="border-spacing: 0" aria-label="Data Set WORK.SALESANALYSIS1">
+<caption aria-label="Data Set WORK.SALESANALYSIS1"></caption>
+<colgroup><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="header" scope="col">Name</th>
+<th class="r header" scope="col">QtyTotal</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="data">Touring-1000 Yellow, 46</td>
+<td class="r data">1005</td>
+</tr>
+<tr>
+<td class="data">Touring-1000 Yellow, 50</td>
+<td class="r data">652</td>
+</tr>
+<tr>
+<td class="data">Touring-1000 Yellow, 54</td>
+<td class="r data">397</td>
+</tr>
+<tr>
+<td class="data">Touring-1000 Yellow, 60</td>
+<td class="r data">1114</td>
+</tr>
+<tr>
+<th class="header" scope="col"> &#160;</th>
+<th class="r header" scope="col">3168</th>
+</tr>
+</tbody>
+</table>
+</article>
+</section>
+<section data-name="Print" data-sec-type="proc">
+<hr class="pagebreak"/>
+<div id="IDX10" class="systitleandfootercontainer" style="border-spacing: 1px">
+<p><span class="c systemtitle">Total sales in 2013 and 2014</span> </p>
+</div>
+<h1 class="contentprocname toc">The Print Procedure</h1>
+<article aria-label="Data Set WORK.SALESANALYSIS1">
+<h1 class="contentitem toc">Data Set WORK.SALESANALYSIS1</h1>
+<table class="table" style="border-spacing: 0" aria-label="Data Set WORK.SALESANALYSIS1">
+<caption aria-label="Data Set WORK.SALESANALYSIS1"></caption>
+<colgroup><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="header" scope="col">Name</th>
+<th class="r header" scope="col">TotSale</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="data">Sport-100 Helmet, Red</td>
+<td class="r data">162948.43</td>
+</tr>
+<tr>
+<td class="data">Sport-100 Helmet, Black</td>
+<td class="r data">168091.96</td>
+</tr>
+<tr>
+<td class="data">Sport-100 Helmet, Blue</td>
+<td class="r data">170191.36</td>
+</tr>
+<tr>
+<td class="data">AWC Logo Cap</td>
+<td class="r data">51404.82</td>
+</tr>
+<tr>
+<td class="data">Long-Sleeve Logo Jersey, S</td>
+<td class="r data">21445.71</td>
+</tr>
+<tr>
+<td class="data">Long-Sleeve Logo Jersey, M</td>
+<td class="r data">115326.93</td>
+</tr>
+<tr>
+<td class="data">Long-Sleeve Logo Jersey, L</td>
+<td class="r data">196710.65</td>
+</tr>
+<tr>
+<td class="data">Long-Sleeve Logo Jersey, XL</td>
+<td class="r data">83783.24</td>
+</tr>
+<tr>
+<td class="data">HL Road Frame - Red, 62</td>
+<td class="r data">223314.00</td>
+</tr>
+<tr>
+<td class="data">HL Road Frame - Red, 44</td>
+<td class="r data">224172.90</td>
+</tr>
+<tr>
+<td class="data">HL Road Frame - Red, 48</td>
+<td class="r data">52392.90</td>
+</tr>
+<tr>
+<td class="data">LL Road Frame - Black, 58</td>
+<td class="r data">88823.75</td>
+</tr>
+<tr>
+<td class="data">LL Road Frame - Black, 60</td>
+<td class="r data">12342.25</td>
+</tr>
+<tr>
+<td class="data">LL Road Frame - Red, 44</td>
+<td class="r data">37229.09</td>
+</tr>
+<tr>
+<td class="data">LL Road Frame - Red, 48</td>
+<td class="r data">34436.91</td>
+</tr>
+<tr>
+<td class="data">LL Road Frame - Red, 52</td>
+<td class="r data">1820.99</td>
+</tr>
+<tr>
+<td class="data">LL Road Frame - Red, 60</td>
+<td class="r data">46165.42</td>
+</tr>
+<tr>
+<td class="data">LL Road Frame - Red, 62</td>
+<td class="r data">39178.22</td>
+</tr>
+<tr>
+<td class="data">LL Road Frame - Black, 44</td>
+<td class="r data">22863.52</td>
+</tr>
+<tr>
+<td class="data">LL Road Frame - Black, 52</td>
+<td class="r data">156604.97</td>
+</tr>
+<tr>
+<td class="data">HL Mountain Frame - Silver, 42</td>
+<td class="r data">148184.70</td>
+</tr>
+<tr>
+<td class="data">HL Mountain Frame - Silver, 46</td>
+<td class="r data">287363.70</td>
+</tr>
+<tr>
+<td class="data">HL Mountain Frame - Black, 42</td>
+<td class="r data">527963.52</td>
+</tr>
+<tr>
+<td class="data">HL Mountain Frame - Black, 38</td>
+<td class="r data">284225.76</td>
+</tr>
+<tr>
+<td class="data">HL Mountain Frame - Silver, 38</td>
+<td class="r data">550985.10</td>
+</tr>
+<tr>
+<td class="data">Road-650 Red, 58</td>
+<td class="r data">100222.72</td>
+</tr>
+<tr>
+<td class="data">Road-650 Red, 60</td>
+<td class="r data">257635.03</td>
+</tr>
+<tr>
+<td class="data">Road-650 Red, 62</td>
+<td class="r data">237903.68</td>
+</tr>
+<tr>
+<td class="data">Road-650 Red, 44</td>
+<td class="r data">285822.67</td>
+</tr>
+<tr>
+<td class="data">Road-650 Red, 48</td>
+<td class="r data">236776.18</td>
+</tr>
+<tr>
+<td class="data">Road-650 Red, 52</td>
+<td class="r data">194181.52</td>
+</tr>
+<tr>
+<td class="data">Road-650 Black, 58</td>
+<td class="r data">233393.66</td>
+</tr>
+<tr>
+<td class="data">Road-650 Black, 60</td>
+<td class="r data">186351.62</td>
+</tr>
+<tr>
+<td class="data">Road-650 Black, 62</td>
+<td class="r data">97090.76</td>
+</tr>
+<tr>
+<td class="data">Road-650 Black, 44</td>
+<td class="r data">179304.71</td>
+</tr>
+<tr>
+<td class="data">Road-650 Black, 48</td>
+<td class="r data">76106.63</td>
+</tr>
+<tr>
+<td class="data">Road-650 Black, 52</td>
+<td class="r data">277930.13</td>
+</tr>
+<tr>
+<td class="data">Mountain-200 Silver, 38</td>
+<td class="r data">3879023.28</td>
+</tr>
+<tr>
+<td class="data">Mountain-200 Silver, 42</td>
+<td class="r data">3352385.55</td>
+</tr>
+<tr>
+<td class="data">Mountain-200 Silver, 46</td>
+<td class="r data">3398785.35</td>
+</tr>
+<tr>
+<td class="data">Mountain-200 Black, 38</td>
+<td class="r data">4794234.11</td>
+</tr>
+<tr>
+<td class="data">Mountain-200 Black, 42</td>
+<td class="r data">4073607.25</td>
+</tr>
+<tr>
+<td class="data">Mountain-200 Black, 46</td>
+<td class="r data">3380520.27</td>
+</tr>
+<tr>
+<td class="data">Mountain-300 Black, 38</td>
+<td class="r data">145798.65</td>
+</tr>
+<tr>
+<td class="data">Mountain-300 Black, 40</td>
+<td class="r data">151630.60</td>
+</tr>
+<tr>
+<td class="data">Mountain-300 Black, 44</td>
+<td class="r data">149686.61</td>
+</tr>
+<tr>
+<td class="data">Mountain-300 Black, 48</td>
+<td class="r data">149038.62</td>
+</tr>
+<tr>
+<td class="data">Road-250 Red, 44</td>
+<td class="r data">696354.75</td>
+</tr>
+<tr>
+<td class="data">Road-250 Red, 48</td>
+<td class="r data">431006.94</td>
+</tr>
+<tr>
+<td class="data">Road-250 Red, 52</td>
+<td class="r data">493556.70</td>
+</tr>
+<tr>
+<td class="data">Road-250 Red, 58</td>
+<td class="r data">1453793.25</td>
+</tr>
+<tr>
+<td class="data">Road-250 Black, 44</td>
+<td class="r data">2521537.20</td>
+</tr>
+<tr>
+<td class="data">Road-250 Black, 48</td>
+<td class="r data">2321182.50</td>
+</tr>
+<tr>
+<td class="data">Road-250 Black, 52</td>
+<td class="r data">1898482.95</td>
+</tr>
+<tr>
+<td class="data">Road-250 Black, 58</td>
+<td class="r data">1458679.95</td>
+</tr>
+<tr>
+<td class="data">Road-550-W Yellow, 38</td>
+<td class="r data">1318816.73</td>
+</tr>
+<tr>
+<td class="data">Road-550-W Yellow, 40</td>
+<td class="r data">1109285.10</td>
+</tr>
+<tr>
+<td class="data">Road-550-W Yellow, 42</td>
+<td class="r data">963621.40</td>
+</tr>
+<tr>
+<td class="data">Road-550-W Yellow, 44</td>
+<td class="r data">737282.42</td>
+</tr>
+<tr>
+<td class="data">Road-550-W Yellow, 48</td>
+<td class="r data">1333383.10</td>
+</tr>
+<tr>
+<td class="data">LL Fork</td>
+<td class="r data">4713.40</td>
+</tr>
+<tr>
+<td class="data">HL Fork</td>
+<td class="r data">17762.53</td>
+</tr>
+<tr>
+<td class="data">ML Headset</td>
+<td class="r data">12827.17</td>
+</tr>
+<tr>
+<td class="data">HL Headset</td>
+<td class="r data">6436.07</td>
+</tr>
+<tr>
+<td class="data">LL Mountain Handlebars</td>
+<td class="r data">14671.48</td>
+</tr>
+<tr>
+<td class="data">ML Mountain Handlebars</td>
+<td class="r data">34439.90</td>
+</tr>
+<tr>
+<td class="data">HL Mountain Handlebars</td>
+<td class="r data">22298.06</td>
+</tr>
+<tr>
+<td class="data">LL Road Handlebars</td>
+<td class="r data">2725.85</td>
+</tr>
+<tr>
+<td class="data">HL Road Handlebars</td>
+<td class="r data">27421.56</td>
+</tr>
+<tr>
+<td class="data">ML Mountain Frame - Black, 38</td>
+<td class="r data">33480.96</td>
+</tr>
+<tr>
+<td class="data">LL Mountain Front Wheel</td>
+<td class="r data">6232.44</td>
+</tr>
+<tr>
+<td class="data">ML Mountain Front Wheel</td>
+<td class="r data">8653.64</td>
+</tr>
+<tr>
+<td class="data">HL Mountain Front Wheel</td>
+<td class="r data">7385.29</td>
+</tr>
+<tr>
+<td class="data">ML Road Front Wheel</td>
+<td class="r data">28122.15</td>
+</tr>
+<tr>
+<td class="data">HL Road Front Wheel</td>
+<td class="r data">32477.90</td>
+</tr>
+<tr>
+<td class="data">ML Road Frame-W - Yellow, 38</td>
+<td class="r data">199862.88</td>
+</tr>
+<tr>
+<td class="data">LL Mountain Rear Wheel</td>
+<td class="r data">3632.64</td>
+</tr>
+<tr>
+<td class="data">ML Mountain Rear Wheel</td>
+<td class="r data">47157.80</td>
+</tr>
+<tr>
+<td class="data">HL Mountain Rear Wheel</td>
+<td class="r data">50260.22</td>
+</tr>
+<tr>
+<td class="data">LL Road Rear Wheel</td>
+<td class="r data">22990.28</td>
+</tr>
+<tr>
+<td class="data">HL Road Rear Wheel</td>
+<td class="r data">528.45</td>
+</tr>
+<tr>
+<td class="data">ML Mountain Frame - Black, 44</td>
+<td class="r data">39549.38</td>
+</tr>
+<tr>
+<td class="data">ML Mountain Frame - Black, 48</td>
+<td class="r data">74327.73</td>
+</tr>
+<tr>
+<td class="data">ML Road Frame-W - Yellow, 40</td>
+<td class="r data">34262.21</td>
+</tr>
+<tr>
+<td class="data">ML Road Frame-W - Yellow, 44</td>
+<td class="r data">311215.06</td>
+</tr>
+<tr>
+<td class="data">ML Road Frame-W - Yellow, 48</td>
+<td class="r data">198435.29</td>
+</tr>
+<tr>
+<td class="data">HL Road Frame - Black, 44</td>
+<td class="r data">227608.50</td>
+</tr>
+<tr>
+<td class="data">HL Road Frame - Black, 48</td>
+<td class="r data">52392.90</td>
+</tr>
+<tr>
+<td class="data">Men&apos;s Sports Shorts, S</td>
+<td class="r data">6370.94</td>
+</tr>
+<tr>
+<td class="data">Cable Lock</td>
+<td class="r data">47.10</td>
+</tr>
+<tr>
+<td class="data">Minipump</td>
+<td class="r data">4041.98</td>
+</tr>
+<tr>
+<td class="data">Men&apos;s Sports Shorts, M</td>
+<td class="r data">15285.45</td>
+</tr>
+<tr>
+<td class="data">Men&apos;s Sports Shorts, L</td>
+<td class="r data">4787.20</td>
+</tr>
+<tr>
+<td class="data">Women&apos;s Tights, S</td>
+<td class="r data">29099.87</td>
+</tr>
+<tr>
+<td class="data">Women&apos;s Tights, M</td>
+<td class="r data">5219.30</td>
+</tr>
+<tr>
+<td class="data">Women&apos;s Tights, L</td>
+<td class="r data">33681.76</td>
+</tr>
+<tr>
+<td class="data">Men&apos;s Bib-Shorts, S</td>
+<td class="r data">17080.10</td>
+</tr>
+<tr>
+<td class="data">Men&apos;s Bib-Shorts, M</td>
+<td class="r data">28720.31</td>
+</tr>
+<tr>
+<td class="data">Men&apos;s Bib-Shorts, L</td>
+<td class="r data">8693.03</td>
+</tr>
+<tr>
+<td class="data">Half-Finger Gloves, S</td>
+<td class="r data">45037.11</td>
+</tr>
+<tr>
+<td class="data">Half-Finger Gloves, M</td>
+<td class="r data">68523.02</td>
+</tr>
+<tr>
+<td class="data">Half-Finger Gloves, L</td>
+<td class="r data">26841.04</td>
+</tr>
+<tr>
+<td class="data">Full-Finger Gloves, S</td>
+<td class="r data">3926.27</td>
+</tr>
+<tr>
+<td class="data">Full-Finger Gloves, M</td>
+<td class="r data">16791.58</td>
+</tr>
+<tr>
+<td class="data">Full-Finger Gloves, L</td>
+<td class="r data">24644.11</td>
+</tr>
+<tr>
+<td class="data">Classic Vest, S</td>
+<td class="r data">269684.50</td>
+</tr>
+<tr>
+<td class="data">Classic Vest, M</td>
+<td class="r data">145034.00</td>
+</tr>
+<tr>
+<td class="data">Classic Vest, L</td>
+<td class="r data">13144.50</td>
+</tr>
+<tr>
+<td class="data">Women&apos;s Mountain Shorts, S</td>
+<td class="r data">230687.04</td>
+</tr>
+<tr>
+<td class="data">Women&apos;s Mountain Shorts, M</td>
+<td class="r data">79718.61</td>
+</tr>
+<tr>
+<td class="data">Women&apos;s Mountain Shorts, L</td>
+<td class="r data">227047.56</td>
+</tr>
+<tr>
+<td class="data">Water Bottle - 30 oz.</td>
+<td class="r data">34006.85</td>
+</tr>
+<tr>
+<td class="data">Mountain Bottle Cage</td>
+<td class="r data">20229.75</td>
+</tr>
+<tr>
+<td class="data">Road Bottle Cage</td>
+<td class="r data">15390.88</td>
+</tr>
+<tr>
+<td class="data">Patch Kit/8 Patches</td>
+<td class="r data">8850.85</td>
+</tr>
+<tr>
+<td class="data">Racing Socks, M</td>
+<td class="r data">13907.53</td>
+</tr>
+<tr>
+<td class="data">Racing Socks, L</td>
+<td class="r data">22232.27</td>
+</tr>
+<tr>
+<td class="data">Hitch Rack - 4-Bike</td>
+<td class="r data">3799.20</td>
+</tr>
+<tr>
+<td class="data">Bike Wash - Dissolver</td>
+<td class="r data">26386.05</td>
+</tr>
+<tr>
+<td class="data">Fender Set - Mountain</td>
+<td class="r data">46619.58</td>
+</tr>
+<tr>
+<td class="data">All-Purpose Bike Stand</td>
+<td class="r data">395.91</td>
+</tr>
+<tr>
+<td class="data">Hydration Pack - 70 oz.</td>
+<td class="r data">151827.39</td>
+</tr>
+<tr>
+<td class="data">Short-Sleeve Classic Jersey, S</td>
+<td class="r data">105550.45</td>
+</tr>
+<tr>
+<td class="data">Short-Sleeve Classic Jersey, M</td>
+<td class="r data">21973.93</td>
+</tr>
+<tr>
+<td class="data">Short-Sleeve Classic Jersey, L</td>
+<td class="r data">153763.52</td>
+</tr>
+<tr>
+<td class="data">Short-Sleeve Classic Jersey, XL</td>
+<td class="r data">208617.36</td>
+</tr>
+<tr>
+<td class="data">HL Touring Frame - Yellow, 60</td>
+<td class="r data">233107.90</td>
+</tr>
+<tr>
+<td class="data">LL Touring Frame - Yellow, 62</td>
+<td class="r data">69618.10</td>
+</tr>
+<tr>
+<td class="data">HL Touring Frame - Yellow, 46</td>
+<td class="r data">52404.10</td>
+</tr>
+<tr>
+<td class="data">HL Touring Frame - Yellow, 50</td>
+<td class="r data">49994.72</td>
+</tr>
+<tr>
+<td class="data">HL Touring Frame - Yellow, 54</td>
+<td class="r data">325266.84</td>
+</tr>
+<tr>
+<td class="data">HL Touring Frame - Blue, 46</td>
+<td class="r data">68667.44</td>
+</tr>
+<tr>
+<td class="data">HL Touring Frame - Blue, 50</td>
+<td class="r data">74690.90</td>
+</tr>
+<tr>
+<td class="data">HL Touring Frame - Blue, 54</td>
+<td class="r data">326471.53</td>
+</tr>
+<tr>
+<td class="data">HL Touring Frame - Blue, 60</td>
+<td class="r data">223470.37</td>
+</tr>
+<tr>
+<td class="data">Rear Derailleur</td>
+<td class="r data">25725.23</td>
+</tr>
+<tr>
+<td class="data">LL Touring Frame - Blue, 50</td>
+<td class="r data">63216.43</td>
+</tr>
+<tr>
+<td class="data">LL Touring Frame - Blue, 54</td>
+<td class="r data">42210.97</td>
+</tr>
+<tr>
+<td class="data">LL Touring Frame - Blue, 58</td>
+<td class="r data">800.21</td>
+</tr>
+<tr>
+<td class="data">LL Touring Frame - Blue, 62</td>
+<td class="r data">3000.78</td>
+</tr>
+<tr>
+<td class="data">LL Touring Frame - Yellow, 44</td>
+<td class="r data">58815.29</td>
+</tr>
+<tr>
+<td class="data">LL Touring Frame - Yellow, 50</td>
+<td class="r data">45611.86</td>
+</tr>
+<tr>
+<td class="data">LL Touring Frame - Yellow, 58</td>
+<td class="r data">7201.87</td>
+</tr>
+<tr>
+<td class="data">LL Touring Frame - Blue, 44</td>
+<td class="r data">5001.30</td>
+</tr>
+<tr>
+<td class="data">ML Mountain Frame-W - Silver, 40</td>
+<td class="r data">196390.15</td>
+</tr>
+<tr>
+<td class="data">ML Mountain Frame-W - Silver, 42</td>
+<td class="r data">136970.66</td>
+</tr>
+<tr>
+<td class="data">ML Mountain Frame-W - Silver, 46</td>
+<td class="r data">41069.35</td>
+</tr>
+<tr>
+<td class="data">Rear Brakes</td>
+<td class="r data">15719.40</td>
+</tr>
+<tr>
+<td class="data">LL Mountain Seat/Saddle</td>
+<td class="r data">5646.38</td>
+</tr>
+<tr>
+<td class="data">ML Mountain Seat/Saddle</td>
+<td class="r data">12540.46</td>
+</tr>
+<tr>
+<td class="data">HL Mountain Seat/Saddle</td>
+<td class="r data">16392.10</td>
+</tr>
+<tr>
+<td class="data">LL Road Seat/Saddle</td>
+<td class="r data">162.72</td>
+</tr>
+<tr>
+<td class="data">HL Road Seat/Saddle</td>
+<td class="r data">4232.26</td>
+</tr>
+<tr>
+<td class="data">LL Touring Seat/Saddle</td>
+<td class="r data">1480.75</td>
+</tr>
+<tr>
+<td class="data">ML Touring Seat/Saddle</td>
+<td class="r data">1972.66</td>
+</tr>
+<tr>
+<td class="data">HL Touring Seat/Saddle</td>
+<td class="r data">13454.78</td>
+</tr>
+<tr>
+<td class="data">LL Mountain Frame - Silver, 42</td>
+<td class="r data">101078.34</td>
+</tr>
+<tr>
+<td class="data">LL Mountain Frame - Silver, 44</td>
+<td class="r data">58777.53</td>
+</tr>
+<tr>
+<td class="data">LL Mountain Frame - Silver, 48</td>
+<td class="r data">6970.92</td>
+</tr>
+<tr>
+<td class="data">LL Mountain Frame - Silver, 52</td>
+<td class="r data">67332.75</td>
+</tr>
+<tr>
+<td class="data">Mountain Tire Tube</td>
+<td class="r data">15444.05</td>
+</tr>
+<tr>
+<td class="data">Road Tire Tube</td>
+<td class="r data">9480.24</td>
+</tr>
+<tr>
+<td class="data">Touring Tire Tube</td>
+<td class="r data">7425.12</td>
+</tr>
+<tr>
+<td class="data">LL Mountain Frame - Black, 42</td>
+<td class="r data">63396.70</td>
+</tr>
+<tr>
+<td class="data">LL Mountain Frame - Black, 44</td>
+<td class="r data">93671.25</td>
+</tr>
+<tr>
+<td class="data">LL Mountain Frame - Black, 48</td>
+<td class="r data">57851.36</td>
+</tr>
+<tr>
+<td class="data">LL Mountain Frame - Black, 52</td>
+<td class="r data">2248.11</td>
+</tr>
+<tr>
+<td class="data">LL Mountain Tire</td>
+<td class="r data">21541.38</td>
+</tr>
+<tr>
+<td class="data">ML Mountain Tire</td>
+<td class="r data">34818.39</td>
+</tr>
+<tr>
+<td class="data">HL Mountain Tire</td>
+<td class="r data">488.60</td>
+</tr>
+<tr>
+<td class="data">LL Road Tire</td>
+<td class="r data">22435.56</td>
+</tr>
+<tr>
+<td class="data">ML Road Tire</td>
+<td class="r data">23140.74</td>
+</tr>
+<tr>
+<td class="data">HL Road Tire</td>
+<td class="r data">27970.80</td>
+</tr>
+<tr>
+<td class="data">Touring Tire</td>
+<td class="r data">27105.65</td>
+</tr>
+<tr>
+<td class="data">LL Mountain Pedal</td>
+<td class="r data">10908.01</td>
+</tr>
+<tr>
+<td class="data">ML Mountain Pedal</td>
+<td class="r data">12852.63</td>
+</tr>
+<tr>
+<td class="data">HL Mountain Pedal</td>
+<td class="r data">38146.29</td>
+</tr>
+<tr>
+<td class="data">LL Road Pedal</td>
+<td class="r data">21087.19</td>
+</tr>
+<tr>
+<td class="data">ML Road Pedal</td>
+<td class="r data">24624.89</td>
+</tr>
+<tr>
+<td class="data">HL Road Pedal</td>
+<td class="r data">32849.54</td>
+</tr>
+<tr>
+<td class="data">Touring Pedal</td>
+<td class="r data">7143.32</td>
+</tr>
+<tr>
+<td class="data">ML Mountain Frame-W - Silver, 38</td>
+<td class="r data">1529.18</td>
+</tr>
+<tr>
+<td class="data">LL Mountain Frame - Black, 40</td>
+<td class="r data">1198.99</td>
+</tr>
+<tr>
+<td class="data">LL Mountain Frame - Silver, 40</td>
+<td class="r data">70026.06</td>
+</tr>
+<tr>
+<td class="data">Front Derailleur</td>
+<td class="r data">44628.82</td>
+</tr>
+<tr>
+<td class="data">LL Touring Handlebars</td>
+<td class="r data">1548.62</td>
+</tr>
+<tr>
+<td class="data">HL Touring Handlebars</td>
+<td class="r data">12087.24</td>
+</tr>
+<tr>
+<td class="data">Front Brakes</td>
+<td class="r data">50417.10</td>
+</tr>
+<tr>
+<td class="data">LL Crankset</td>
+<td class="r data">44855.24</td>
+</tr>
+<tr>
+<td class="data">ML Crankset</td>
+<td class="r data">10464.79</td>
+</tr>
+<tr>
+<td class="data">HL Crankset</td>
+<td class="r data">148955.32</td>
+</tr>
+<tr>
+<td class="data">Chain</td>
+<td class="r data">9399.46</td>
+</tr>
+<tr>
+<td class="data">Touring-2000 Blue, 60</td>
+<td class="r data">996177.00</td>
+</tr>
+<tr>
+<td class="data">Touring-1000 Yellow, 46</td>
+<td class="r data">2395990.35</td>
+</tr>
+<tr>
+<td class="data">Touring-1000 Yellow, 50</td>
+<td class="r data">1554413.64</td>
+</tr>
+<tr>
+<td class="data">Touring-1000 Yellow, 54</td>
+<td class="r data">946475.79</td>
+</tr>
+<tr>
+<td class="data">Touring-1000 Yellow, 60</td>
+<td class="r data">2655853.98</td>
+</tr>
+<tr>
+<td class="data">Touring-3000 Blue, 54</td>
+<td class="r data">509252.10</td>
+</tr>
+<tr>
+<td class="data">Touring-3000 Blue, 58</td>
+<td class="r data">357812.70</td>
+</tr>
+<tr>
+<td class="data">Touring-3000 Blue, 62</td>
+<td class="r data">208600.35</td>
+</tr>
+<tr>
+<td class="data">Touring-3000 Yellow, 44</td>
+<td class="r data">631739.85</td>
+</tr>
+<tr>
+<td class="data">Touring-3000 Yellow, 50</td>
+<td class="r data">509252.10</td>
+</tr>
+<tr>
+<td class="data">Touring-3000 Yellow, 54</td>
+<td class="r data">336284.55</td>
+</tr>
+<tr>
+<td class="data">Touring-3000 Yellow, 58</td>
+<td class="r data">217508.55</td>
+</tr>
+<tr>
+<td class="data">Touring-3000 Yellow, 62</td>
+<td class="r data">626543.40</td>
+</tr>
+<tr>
+<td class="data">Touring-1000 Blue, 46</td>
+<td class="r data">2388838.14</td>
+</tr>
+<tr>
+<td class="data">Touring-1000 Blue, 50</td>
+<td class="r data">1547261.43</td>
+</tr>
+<tr>
+<td class="data">Touring-1000 Blue, 54</td>
+<td class="r data">984620.91</td>
+</tr>
+<tr>
+<td class="data">Touring-1000 Blue, 60</td>
+<td class="r data">2670158.40</td>
+</tr>
+<tr>
+<td class="data">Touring-2000 Blue, 46</td>
+<td class="r data">653589.30</td>
+</tr>
+<tr>
+<td class="data">Touring-2000 Blue, 50</td>
+<td class="r data">391181.70</td>
+</tr>
+<tr>
+<td class="data">Touring-2000 Blue, 54</td>
+<td class="r data">1226998.50</td>
+</tr>
+<tr>
+<td class="data">Road-350-W Yellow, 40</td>
+<td class="r data">2512362.23</td>
+</tr>
+<tr>
+<td class="data">Road-350-W Yellow, 42</td>
+<td class="r data">1605734.56</td>
+</tr>
+<tr>
+<td class="data">Road-350-W Yellow, 44</td>
+<td class="r data">911730.64</td>
+</tr>
+<tr>
+<td class="data">Road-350-W Yellow, 48</td>
+<td class="r data">2759005.78</td>
+</tr>
+<tr>
+<td class="data">Road-750 Black, 58</td>
+<td class="r data">481671.08</td>
+</tr>
+<tr>
+<td class="data">Touring-3000 Blue, 44</td>
+<td class="r data">216766.20</td>
+</tr>
+<tr>
+<td class="data">Touring-3000 Blue, 50</td>
+<td class="r data">624316.35</td>
+</tr>
+<tr>
+<td class="data">Mountain-400-W Silver, 38</td>
+<td class="r data">327033.25</td>
+</tr>
+<tr>
+<td class="data">Mountain-400-W Silver, 40</td>
+<td class="r data">474775.33</td>
+</tr>
+<tr>
+<td class="data">Mountain-400-W Silver, 42</td>
+<td class="r data">296253.65</td>
+</tr>
+<tr>
+<td class="data">Mountain-400-W Silver, 46</td>
+<td class="r data">308565.49</td>
+</tr>
+<tr>
+<td class="data">Mountain-500 Silver, 40</td>
+<td class="r data">254245.50</td>
+</tr>
+<tr>
+<td class="data">Mountain-500 Silver, 42</td>
+<td class="r data">257070.45</td>
+</tr>
+<tr>
+<td class="data">Mountain-500 Silver, 44</td>
+<td class="r data">215261.19</td>
+</tr>
+<tr>
+<td class="data">Mountain-500 Silver, 48</td>
+<td class="r data">258200.43</td>
+</tr>
+<tr>
+<td class="data">Mountain-500 Silver, 52</td>
+<td class="r data">290969.85</td>
+</tr>
+<tr>
+<td class="data">Mountain-500 Black, 40</td>
+<td class="r data">152277.18</td>
+</tr>
+<tr>
+<td class="data">Mountain-500 Black, 42</td>
+<td class="r data">209516.12</td>
+</tr>
+<tr>
+<td class="data">Mountain-500 Black, 44</td>
+<td class="r data">188996.50</td>
+</tr>
+<tr>
+<td class="data">Mountain-500 Black, 48</td>
+<td class="r data">242455.51</td>
+</tr>
+<tr>
+<td class="data">Mountain-500 Black, 52</td>
+<td class="r data">146877.28</td>
+</tr>
+<tr>
+<td class="data">LL Bottom Bracket</td>
+<td class="r data">12244.93</td>
+</tr>
+<tr>
+<td class="data">HL Bottom Bracket</td>
+<td class="r data">39581.44</td>
+</tr>
+<tr>
+<td class="data">Road-750 Black, 44</td>
+<td class="r data">354233.44</td>
+</tr>
+<tr>
+<td class="data">Road-750 Black, 48</td>
+<td class="r data">840224.44</td>
+</tr>
+<tr>
+<td class="data">Road-750 Black, 52</td>
+<td class="r data">722506.62</td>
+</tr>
+<tr>
+<th class="header" scope="col"> &#160;</th>
+<th class="r header" scope="col">89758548.87</th>
+</tr>
+</tbody>
+</table>
+</article>
+</section>
+<section data-name="GChart" data-sec-type="proc">
+<hr class="pagebreak"/>
+<h1 class="contentprocname toc">The GChart Procedure</h1>
+<article id="IDX11" aria-label="Bar chart of Color">
+<h1 class="contentitem toc">Bar chart of Color</h1>
+<div class="c">
+<img class="graph" style="border-width: 0; border-spacing: 1px; height: 600px; width: 800px" alt="Bar chart of Color" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAJYCAYAAACadoJwAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAgAElEQVR4nO3de5zVdZ0/8PcRL6CDwILIigjaegHEyVi3Hu4mqAkR4iV1pQ0RBvBSKSVKmXgjKB/eFt1dFiqbNF3z0s3ETMkydzcJWxMM2tJIU8ELOFxmAFE+vz/8cXYGZoYZmPl+D5zn8/GYh3O+1/f3e87hnNd8vt+3hZRSCgAAgAzskXcBAABA+RBAAACAzAggQEkpFArFH1pmdz1nu8pxbdq0Kb72ta9F//79o2PHjlEoFOLQQw9t1TZ2lWMFaAsCCOzi6n9xqf+z9957R58+feKcc86Jp556Ktca58+fH6NHj46+fftGx44do3PnzjFo0KC4+OKL4z//8z9zra2+Uv8SWIr17SrPbXuaNm1afPnLX47f//73sXHjxoiIGDp0aKPLlspz2FgdpVIbsPsruAkddm0t+bJQKBSiuro6zj///Awq+j91dXVRVVUV9913X7PLnXXWWfHggw9GRMPjyfqfpzz33RJN1ZdH3Tvy3LZWqT8fW/Tp0ydeeeWViIh4+OGHY+TIkU0uWyrPYWP721XON7DrMwICu5GUUvFn1apVMX369OL0a6+9NvN6xowZU/yCOmjQoHj88cejrq4u3nzzzfjNb34TN910UxxzzDFx7rnnZl4bO8dz+3+2hI+IiI9//OM5VgKwi0jALi0iij9bW7NmTXHevvvu22Deb3/723T11VenoUOHpp49e6Y999wzde3aNZ188snpkUceaXIfNTU16fTTT08dO3ZM/fr1a7KuH/zgB8V1+vXrl95+++1WH88vfvGLdOqpp6ZDDjkk7bvvvqmysjLNmzevXY6j/rzmzml9mzZtSrfeems69thj07777pv23XffNHjw4HTbbbeld999t0XHtffee6eBAwem+++/v8XnZev6WnvOUkqptrY2TZs2LX3gAx9Ie++9d+rdu3f6whe+kNasWdNsHSnt+HO7M+esLbbR0tduS/fR1HPS1OumlJ7D5vbf2HG0dF/11924cWP6whe+kLp3757+6q/+Kl122WXp3XffTStXrkxjx45NXbt2TQceeGC6+OKLU21tbYPtPPjgg+mUU05JPXr0SHvuuWfq1atX+vCHP5yuuuqqtHjx4u0eH1DaBBDYxTX1peett95KV155ZXHeqFGjGszv27dvs1+g7rvvvkb3ccYZZxR/HzduXJN1nXrqqcXlqqurd+h4GvvZa6+9GnwBaavjaG0Aeeedd9LJJ5/c5HrDhw9PmzZtavFxRUT6yU9+0urzsiPnbMOGDen4449vdNm/+7u/Sxs3bmz2OdrR53ZnzllbbKOlr92W7qO5c96YUnoOW7r/1u6r/rxPf/rT2yx/5ZVXpsrKym2mX3HFFcVtfO1rX2v2XGwvPAKlTwCBXVxLvtieeOKJacWKFQ3W++xnP5vGjx+f5s+fn9asWZNWrlyZLr300uI6gwYNanQf++yzT7rzzju3+wWnZ8+exXVeffXVHTqeT37yk+nZZ59Na9euTdOmTStO/9SnPtUux7G9L5D13XjjjcVlP/zhD6c///nP6cUXX0wf/OAHi9NvueWWRrddWVmZnn766bRu3boGxzV48OAWn5udOWc33HBDcfqECRPS22+/nS666KLitFtvvbXZOnb0ud2Zc9YW22jpa7ct6mxKqTyHjdXRVG2t2Vf9bRx88MHp+eefTw888ECD6X379k2///3v03/8x380Giq6d+9enD5//vy0adOmtGLFivTkk0+mCy+8MF1yySXbPc9AaRNAYBfXkgDSuXPndOmll6a6urpmt1X/kq299tqr0X3ccccdLaprr732Kq5T/y/SrTme+lauXFmc3qlTp3Y5jtZ8kTzmmGOKyz711FPF6T/72c+K0z/4wQ82uu233nqr0eOqX2tjWvLltb6mzln92rcEiFdffbXBl+7m7OhzuzPnrC220dLXblvU2ZRSeQ5bE0Bas6/623j00UdTSu9fvlV/+mOPPZZSSmndunXFaR06dChuo3fv3sXp++yzTzrjjDPSD3/4w20urwN2XbpgwS6uqc4169evjz/84Q/x5S9/OR555JGIiLjwwgtjzpw5xWVeeuml+MY3vhG//OUvY9myZbFy5cpYv379Nturv4/Nmze3qPPWAQccEG+99VZERCxfvjx69eq1U8fT3Ly2Oo7WdAHq1KlTbNiwISIi1qxZE507dy7+3qVLl+IydXV1O3xcW9uRDkqNzatfe2P233//WL16dZPzd/S5bYtztjPbaOlrty2f262VynPYmi5YrdlXa4+vsel33313nH/++bF58+YG+zn00ENj+vTpMWbMmCZrAXYNumDBbqpTp05RWVkZ3/rWt4rT7r///uLvjzzySBx55JExc+bMeOqpp+KVV15p8KW9KS39fwQce+yxxd9/8pOftKLy1mnv49gZpfr/U9heXWvWrGl2fns+t21xzpraRls+H3k/tzv7HJbqviLe77D2zDPPxJgxY4rhLyJi2bJlcd5558XMmTPbdH9A9gQQ2M3V/zK+xx7/95b//Oc/X/yfpn3+85+P3/3ud7F27do22+/YsWOLv1977bXFv5i3tfY6jq3/+rq1I488svj7b3/72+LvzzzzTPH3I444YqfraMr26mvOwIEDi78vWrSoQfvmLT/N2dHnti3OWRbnPavnNs/nsDW1tfe+GnPsscfGd77znXjzzTfj+9//fhx33HHFebNmzWrz/QEZa8/ru4D2F01ct11XV5eeeeaZNGTIkOL8SZMmFed37ty5OP3ZZ59NL7744jbdoLa3j+a89957aejQocX1jjrqqPTTn/40rV+/Pr3xxhvpmWeeSTfeeGM65phjGrSgbW5fjc1ry+M46KCDivMXLlzY7PHddNNNDa6BX7Zs2Q7fqNzS89tUfa3d9pw5c4rTjj766PT000+n2tra9Pzzz6drr702ff7zn2+2jh19btvinLXleW9Ke+6jVJ7DxrbZVG2t2VdTx9Ga6ZdcckmaMmVKWrhwYVq9enXasGFDg/tvevbs2eyxAaVPAIFdXP0P8OZ+Bg8enFatWlVc77TTTtvuOlt68+/Il7iUUlq1alWz7Uy3/Jx22mmNHk9zx9oex3HxxRc3WGZnWrUOGzYsvfPOOzt8XK2pr7Xbfu+999K5557bZO0taXO6I89tW5yztjzvTWnPfZTKc9jYNpuqrTX7auo4WjN9e621r7/++u2dZqDECSCwi2vug3r//fdPxx9/fLr99tu3aT26fPnydOaZZ6YuXbqknj17plNOOSXNnz+/wYf/kiVLttlHa7333nvpgQceSKNGjUq9evVKe+21V6qoqEj9+/dP48ePL3bEaex4mjvW9jiONWvWpIsvvrj4l+DtfYl755130i233JI++MEPpk6dOqVOnTqlD33oQ2nWrFnbdIdqiwDSVH07su3Nmzen6urq9A//8A9p//33T506dUpHHnlkGjt2bFqwYEGzdWzR2uc2pbY5Z2113pvTXvsoleewsW029/pv6b7aIoA899xzaerUqelv//Zv0wEHHJA6dOiQunfvnoYOHZruuuuuZo8L2DXoggUAAGTGTegAAEBmBBAAACAzAggAAJAZAQQAAMiMAAIAAGRGAAEAADIjgAAAAJkRQAAAgMwIIAAAQGYEEAAAIDMCCAAAkBkBBAAAyIwAAgAAZEYAAQAAMiOAAAAAmRFAAACAzAggAABAZgQQAAAgM9sNIIVCodGfxuZ36NAhevfuHePGjYvXX399u9uov52IiOeeey4+/vGPR+fOnaOioiI+8YlPxO9+97tt6mmqztbsr1AoxLx585rdTkTE0qVL49RTT43OnTtHt27d4rzzzovly5dHbW1tHHvssbF06dJG6/nDH/4QH/rQh6K2trbR+QAAUI5aNAKSUtrmp7H57733XrzwwgtRWVkZY8aM2e426m/nD3/4Q5x88skxbNiw+OMf/xh//OMf4+STT44TTzwx/vSnP7X6wLa3v4iIKVOmxKpVq5rcxp///OcYOnRonHTSSfHiiy/G4sWL4+///u/j0ksvjf322y+++c1vxrhx4+Kdd95psN6mTZti3Lhx8Y1vfCP222+/VtcOAAC7q0La+lv51gsUCtt8cd/e/A0bNsQBBxwQa9eubdE2IiLGjBkTf/M3fxPXXXddg+nTpk2Ll19+Oe66665mt1V/ekv2VygU4o477ojHH3887r333ka3M378+DjooINi5syZTW7nxhtvjBUrVsStt95anPbFL34xevToEVdccUWzNQAAQLlp83tA1q9fHw899FCceOKJrVpv/vz5cd55520zfdy4cTF//vy2Kq+BqqqqWLduXdx///2Nzv/pT38a48aNa3YbV1xxRSxevDgee+yxiIj4+c9/Hs8++2xcfvnlbV0uAADs8lo0AtKY+qMN9XXu3DkmTZoU1113XXTu3LlF24iI2GuvvWLt2rXRsWPHBsusX78+unbtGhs3bixuqyUjINvb35blV6xYEUOGDIknn3wyevXq1WA7TdW0tVdffTWGDx8e3/ve9+Lcc8+NRx55JA466KBm1wEAgHLUpveApJTizDPPjBEjRhTDR0u3ccABB8Rrr722zb5fe+216NOnT/FxoVCId999t8EymzZtij32aHgo29vfFr169Yrp06fHBRdcsM28bt26xfLlyxtdr77evXvHjBkz4thjj43rrrtO+AAAgCa0+SVYc+fOjRtvvDGWLFnSqvWGDx8e//Ef/7HN9LvvvjvOOuus4uPDDjssFi1a1GCZZ599Nj7wgQ/sWMERce6558a+++4b1dXVDaYPHTo0vvvd77ZoG2eccUasX78+zjjjjB2uAwAAdnd7tvUGO3bsGHfeeWecc8458f3vfz969uzZovWuvfbaOP7446Nr165xzjnnRETEfffdF9///vfjiSeeKC53/fXXx6RJk+Ib3/hG9O/fPxYtWhQXXHBBTJ8+fafqnj17dhx//PENpl199dVx4oknRvfu3ePss8+O2traeOihh+IXv/hFPPDAAzu1PwAAKEft0gUrIuKZZ56JqVOnxrx582Lfffdtcv366y5ZsiQuv/zy+OUvfxm1tbVx0UUXxbXXXhu9evVqsM7jjz8e11xzTTz//PMxaNCgmDFjRpx00kkNatre/hqr++GHH45Ro0Y1mL5gwYL40pe+FAsWLIiOHTvG6aefHjfccEMceOCBLT4XAADA+7YbQPLyyU9+MoYOHRoXXnhh7LPPPnmXAwAAtIE2vwekrVRXV8cvfvGL6N69exx99NF5lwMAALSBkh0BAQAAdj8lOwICAADsfgQQAAAgM23ehnd3tXz58pg8eXL87Gc/i4j3/78ls2bNKrYZrq6ujptvvjkiIi6//PIYP378drc5t/qu9isYAABKkADSQueff34MHjw45s6dGymluOGGG2LcuHHxyCOPRHV1dcyePTvmzZsXhUIhRo8eHRHRohBy4fix7V06AACUhLnVd7kJvaUqKipixYoVUVFRERERq1evjt69e8e6deviwx/+cHzlK1+JYcOGRUTEz372s7jqqqvi6aefbnabc6vvEkAAACgbc6vvcg9IS33sYx+LOXPmxNq1a2PVqlVx/fXXFwPH0qVLY/DgwcVlKysrY8mSJXmVCgAAJcslWC309a9/PT7ykY/EFVdcERERhx12WPzqV7+KiIja2tro0qVLcdlu3bpFXV1dLnUCAEApE0BaaOLEiTFx4sT47Gc/GxERs2fPjkmTJsWPfvSjqKioiJqamujRo0dEvB9ItlyqtTU3ngMAUM4EkBZ64okn4p577onOnTtHRMQll1wSM2fOjIiIAQMGxMKFC2PEiBEREbF48eLo379/o9upf8+HMAIAQLlxD0gLnXDCCXH99dfHqlWrYu3atTF79uw44YQTIiJi0qRJMW3atFi2bFm8/PLLMXXq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AEBm3ISeAzefAwBQroyAtJHq6uoYOHBgDBw4MKqrq5td9sLxY4udsAAAoJwYAWkD1dXVMXv27Jg3b14UCoUYPXp0RESMHz8+58oAAKC0GAFpA3PmzImZM2dGv379om/fvjFjxoyYO3du3mUBAEDJEUDawNKlS2Pw4MHFx5WVlbFkyZIcKwIAgNIkgLSB2tra6NKlS/Fxt27doq6uLseKAACgNBVSSinvInZ1Xbp0iRdffDF69OgRERFr1qyJQw45JGpqarZZVgcsAADKmZvQ28CAAQNi4cKFMWLEiIiIWLx4cfTv37/RZXW/AgCgnAkgbWDSpEkxbdq0OOqoo6JDhw4xderUmDhxYt5lAQBAyRFA2kBVVVVERIwcOTJSSjFlypSYMGFCzlUBAEDpcQ8IAACQGV2wAACAzAggAABAZgQQAAAgMwIIAACQGQEEAADIjAACAABkRgABAAAyI4AAAACZEUB2c4VCofjTuXPn+NjHPhb/+7//22D+zm6/HLT3edwdFQqFuPfeexud98///M8tOmf1l6n/+6mnnrrzBe5CCoVC3HHHHY1Or+/Xv/51FAqFWLRoUVallZz679UOHTpE7969Y9y4cfH666/v8PZ2R8uWLYszzzwzunfvHt26dYuLLroo3nrrreL8+u+x3e0c5Hnshx56aLzyyitl9dn8pz/9KY444ogG0zZu3Bh9+vSJurq6BtMPPfTQWLZsWbP1786vzTVr1sQRRxwRq1atajB95cqVccQRR8SaNWuaXb+pz8xSJICUgZRSpJRi+fLlMXz48Dj//PPzLmmX5Dy23o033hgppQbT3nnnnbj99tt3arsPP/zwTq2/K7rpppvitddea3aZu+++O/r37x933313RlWVpi3v1ffeey9eeOGFqKysjDFjxuRdVkn5x3/8xzj66KNjyZIlsWLFijjvvPPi2muvLc7fnd9jeR3773//+9hvv/3i4IMPjojy+Uw57LDDYv369bFixYritB/96EfxyiuvxA9+8IPitFdffTU2bdoUhx56aLPb251fm/vvv39ceumlMX369AbTp0+fHpMnT479998/p8raQWK3tvVTvGbNmrTvvvs2On/IkCEpIlKHDh3SgAED0pNPPlmc99Zbb6Xhw4en3r17p29+85uNrn/77ben66+/vj0OI3etOY9bL1v/8Zo1a9LZZ5+dunTpks4444y0du3adqo4fxGRJkyYkB588MEG07/xjW+kT3/608Xz0tz5qr/Mlp/G1tndRUR64IEH0qhRo7aZvsW7776bDjrooPTcc8+lvn37pvfeey/rMktCY6+N9evXp4qKiuLj5t6Hb775Zjr55JNTly5d0ne+853d9rV20EEHpVdffbXJ+Vu/D1977bXUu3fvtHnz5pRSSps3b059+vRJy5cvb/Z8bnntnnLKKe13MK2U17HPmjUrTZkyZZt9pLT7fzaPHj063X///cXHn/jEJ9K4cePSsGHDitPuvffeNHr06JTS+/XfcccdqW/fvumggw5KP/nJT4rLNfW5sLt8vm7atCkNGjQovfDCCymllF544YU0aNCgtGnTppRS88fZ1HeRt99+O40aNSrtv//+6fTTT081NTUppZQWLVqUjj322JRSSi+++GKKiPSnP/0ppZRSZWVlWrx4cbsdpxGQMlJTUxPXX399jBw5stH5v/jFLyKlFBs2bIgpU6bEZz7zmeK8q666KkaNGhWLFi1qMEy8xe233x6rV6+Oa665pt3qLxXbO4/Nufrqq2PIkCHx2muvxac//emYMWNGO1RYOq688sq44YYbio83b94cN910U1x++eWt2k76/6MoW/5bjs4+++zYe++945577ml0/mOPPRaVlZVxzDHHRP/+/ePnP/95xhWWpvXr18dDDz0UJ554YnFac+/DK6+8Mi644IJYvnx5PPvss3mUnIkbbrghhgwZEvfee2+89957213+r//6r+OQQw6JX/3qVxERsWDBgujbt2/06tVru/+uvf766/HYY4+1y3HsiLyO/dFHH43hw4dvs/1y+Gz+6Ec/Gk899VREvH9Onn322fjXf/3X+O1vfxvLly+PiIinnnoqPvrRjxbXWbRoUSxcuDCuu+66uPTSS7fZ5tafC7vL5+uee+4Z06dPjy996UsREfHFL34xvvKVr8See+4ZETt2nNOmTYvjjjsuXnnllaisrCy+Hg4//PB44YUXIuL9kaW99947Hn744UgpxZ/+9Kf4m7/5m3Y6ythN/7RDUdT7C0FEpD59+qSXX365wfzGrF+/Pu25557FxwcffHBas2ZNo9ufNWtWOvXUU9u++BLSmvO49Tmt//iQQw5Jb775Zkoppdra2vSBD3ygnSvPz5bjPu+889JDDz2UUkrpvvvuK/41MKLlIyDN/V4OthzvihUr0uGHH55ef/31BtNTSunTn/50uueee1JKKd1zzz1p3Lhx2RdaArZ+r+69997pkksuSatXry4u09z78KCDDkrr1q1LKaW0cuXK3fq19swzz6RPfvKT6fDDD0/f+973Gsxr7P120003Ff+Cf/nll6d//ud/Tik1fz4jIj3//PPtehw7Iutj37BhQ+revXvasGFDcV45fTYvXrw4VVZWppRSuuWWW9Kll16aUkrpM5/5TLrppptSSikNGjQoLVq0KKXU8Pg3btyY9thjj+Ljpj4LdrfP1yFDhqSbb745DRkypMH07b3mGvu9T58+adWqVSml9z9HDjnkkAbbe+WVV9Ipp5ySvvSlL6Vhw4alv/zlL6lv377tcFT/Z/f9l5WUUsMX4FtvvZWuuOKKBi/m+vOXLl2azj777NSvX7/UqVOnBvP23nvv4vDz1tufNm1a6t+/f4N/PHc3rTmPzX2h3meffbb5crS72nLcS5cuTR/5yEdSSikde+yx6bHHHmswXwDZvvrHe+edd6azzz67wfR169al/fbbr8Frq3Pnzqmuri6XevO09Wvjn/7pn4rBbIvm3of77LNPg8vXyuG1tmTJkjRy5MhUXV1dnNbY++3FF19Mhx12WEoppQ984APppZdeSik1fz5L/fxldew//elP04gRIxqdVw6fzZs3b049evRINTU1qbKyMv3mN79JKaX0q1/9Kh1zzDFp1apVqXv37sVj2ZHPhd3t8/XXv/51ioi0cOHCBtNb+prb+nXy7rvvppRSeuedd9I+++xTnHfKKaekH/3oR+mAAw5I69atSwcccED64Q9/2ODyuPZQ2v8ysNO2fhOvXr26yetMjzrqqDRjxoz00ksvpQ0bNjSY19xfWVJ6/y+u559/fhtXXzpacx4LhULauHFjSun9v9zUn9evX7/iXy52d/WP+9xzz02TJ08u/gWs/vzmzpcA8r6tj3fEiBHpe9/7XnH63XffncaOHdtgmTFjxqR77703sxpLxdbnav369emEE05ICxYsKE5r7n3Yt2/f4r91q1atKpvX2urVq1OvXr2Kj5t6vx1zzDGpuro6HXfcccVpzZ3PXeH8ZXHsl112Wbrtttsanbelht39s3nUqFHpq1/9aho4cGCD6UcccUSaMWNGg9GaHQkgu+Pna2Pvn5a+5rYeAVm+fHlKKaXXXnutwQjIZz/72XTKKaekc845J6WU0tlnn51OOeWU9LnPfa5NjqEp7gEpI2+//XZ89atfjY985CONzn/jjTfiE5/4RHTs2LF4veWW62NHjhwZd999d6xcuTK+8IUvbLPupz71qViyZEk899xz7XcAJWJ75/HQQw+NO++8M95+++246KKLGsw7++yz4/rrr481a9bE/Pnzy6Yzz1VXXRW33357XHHFFdvMa+581XfkkUfG2rVr27PMXcbcuXPjyiuvLD6+++67t3ktjRkzJr7zne9kXVrJ6dixY3z3u9+Nz372s/Hqq69GRPPvw5EjR8YPf/jDqK2tbdAZaXdzwQUXxPz582P16tVRU1MTs2fPjsMPP3y7633yk5+MKVOmxFlnnVWctqv9u5bHsTd1/0dE+Xw2n3DCCTFjxoxtun2NGTMmZs6c2eD+j5aq/7mwq70Od9SOHOdpp50Ws2bNirVr18asWbPi9NNPL8474ogj4vHHHy+2Nz711FPj8ccf36Z1cptr13hD7qLeMN1+++2XTj311PSXv/ylwfwt7rnnnvRXf/VX6cgjj0x33313OvDAA9Of//znlNL/dYbp3bt3+ta3vtXo+j/72c/afcguL605jw899FD667/+63TwwQenhx56qMG8devWpbFjx6auXbumAQMGNOgKsrvZ+p+XyZMnF7t41J/f3Pmq//vjjz9efH2V2z9djR3vv//7v6eISK+//nrq06dPcXh9i3fffTf16dOneL9IuWjqtbFw4cL00Y9+NNXV1TX7PnzrrbfSxz72sd2+C9aKFSvS+eefn7p27Zq6du2azjrrrCb/Tav/+6JFi1JEpD/84Q/Fac2dz1I8f1kf+1/+8pfUr1+/BjWU42fz008/nfbYY49tOpAtW7YsFQqF9F//9V/FaVu/blryubA7fr429v5p6fut/u/1u2CNGjUqvf3228V5jz76aNpjjz2KoypvvPFG2mOPPdKjjz7aHodUVPj/RQIAALQ7l2ABAACZEUAAAIDMCCAAAEBmBBAAACAzAggAAJAZAQQAAMiMAAIAAGRGAAEAADIjgAAAAJkRQAAAgMwIIAAAQGYEEAAAIDMCCAAAkBkBBAAAyIwAAgAAZEYAAQAAMiOAALBLW7p0aZx66qnRuXPn6NatW5x33nmxfPnyFq1bKBTauToAtiaAALDL+vOf/xxDhw6Nk046KV588cVYvHhx/P3f/31ceumleZcGQBMEEAB2Wddff31MnDgxLrvssujZs2ccfPDBcdFFF8UDDzxQXKampiZOO+206NKlS5xxxhmxevXqRrfV3HKFQiEefPDBGDZsWLsfE8DuTgABYJf105/+NMaNG9fsMtOmTYvjjjsuXnnllaisrIxrrrlmh5Z7/fXX47HHHmur0gHKViGllPIuAgB2xF577RVr166Njh07NrnMIYccEs8991x069YtXn/99fi7v/u7eOmllyLi/ZGNLR+D21vu+eefj4EDB7b/QQHs5gQQAHZZPXv2jAULFsShhx7a5DL77LNP1NXVRYcOHWLTpk3RuXPn2LBhQ0Q0DCAtXQ6AneMSLAB2WUOHDo3vfve7zS5z4IEHxptvvhkREW+99VYceOCBO7UcADtHAAFgl3X11VfHLbfcEl//+tdj1apV8Ze//CX+7d/+Lc4555ziMqeddlrMmjUr1q5dG7NmzYrTTz+90W21dDkAdo5LsADYpS1YsCC+9KUvxYIFC6Jjx45x+umnxw033FAcwaipqYmxY8fGk08+GUOGDIm77rorunbtGhENL61q6XIA7BwBBAAAyIxLsAAAgMwIIAAAQGYEEAAAIDMCCAAAkBkBBAAAyIwAAgAAZEYAAQAAMiOAAAAAmRFAAACAzPw/8WRLJJ2nLCEAAAAASUVORK5CYII="/>
+</div>
+</article>
+</section>
+<section data-name="Print" data-sec-type="proc">
+<hr class="pagebreak"/>
+<div id="IDX12" class="systitleandfootercontainer" style="border-spacing: 1px">
+<p><span class="c systemtitle">The number of Red color Helmets sold in 2013 and 2014</span> </p>
+</div>
+<h1 class="contentprocname toc">The Print Procedure</h1>
+<article aria-label="Data Set WORK.RED">
+<h1 class="contentitem toc">Data Set WORK.RED</h1>
+<table class="table" style="border-spacing: 0" aria-label="Data Set WORK.RED">
+<caption aria-label="Data Set WORK.RED"></caption>
+<colgroup><col/></colgroup><colgroup><col/><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="r header" scope="col">Obs</th>
+<th class="header" scope="col">Name</th>
+<th class="r header" scope="col">Year</th>
+<th class="r header" scope="col">Red_Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r rowheader" scope="row">1</th>
+<td class="data">Sport-100 Helmet, Red</td>
+<td class="r data">2014</td>
+<td class="r data">4657</td>
+</tr>
+</tbody>
+</table>
+</article>
+</section>
+<section data-name="Print" data-sec-type="proc">
+<hr class="pagebreak"/>
+<div id="IDX13" class="systitleandfootercontainer" style="border-spacing: 1px">
+<p><span class="c systemtitle">The number of items sold in 2013 and 2014 of Multi color</span> </p>
+</div>
+<h1 class="contentprocname toc">The Print Procedure</h1>
+<article aria-label="Data Set WORK.MULTI">
+<h1 class="contentitem toc">Data Set WORK.MULTI</h1>
+<table class="table" style="border-spacing: 0" aria-label="Data Set WORK.MULTI">
+<caption aria-label="Data Set WORK.MULTI"></caption>
+<colgroup><col/></colgroup><colgroup><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="r header" scope="col">Obs</th>
+<th class="r header" scope="col">Year</th>
+<th class="r header" scope="col">Multi_Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r rowheader" scope="row">1</th>
+<td class="r data">2013</td>
+<td class="r data">161</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">2</th>
+<td class="r data">2014</td>
+<td class="r data">14848</td>
+</tr>
+</tbody>
+</table>
+</article>
+</section>
+<section data-name="Print" data-sec-type="proc">
+<hr class="pagebreak"/>
+<div id="IDX14" class="systitleandfootercontainer" style="border-spacing: 1px">
+<p><span class="c systemtitle">The combined Sales total for all the helmets sold in 2013 and 2014</span> </p>
+</div>
+<h1 class="contentprocname toc">The Print Procedure</h1>
+<article aria-label="Data Set WORK.HELMETS">
+<h1 class="contentitem toc">Data Set WORK.HELMETS</h1>
+<table class="table" style="border-spacing: 0" aria-label="Data Set WORK.HELMETS">
+<caption aria-label="Data Set WORK.HELMETS"></caption>
+<colgroup><col/></colgroup><colgroup><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="r header" scope="col">Obs</th>
+<th class="r header" scope="col">Year</th>
+<th class="r header" scope="col">Helmet_Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r rowheader" scope="row">1</th>
+<td class="r data">2014</td>
+<td class="r data">14325</td>
+</tr>
+</tbody>
+</table>
+</article>
+</section>
+<section data-name="Print" data-sec-type="proc">
+<hr class="pagebreak"/>
+<div id="IDX15" class="systitleandfootercontainer" style="border-spacing: 1px">
+<p><span class="c systemtitle">The number of Yellow Color Touring-1000 sold in 2013 and 2014</span> </p>
+</div>
+<h1 class="contentprocname toc">The Print Procedure</h1>
+<article aria-label="Data Set WORK.YELLOW">
+<h1 class="contentitem toc">Data Set WORK.YELLOW</h1>
+<table class="table" style="border-spacing: 0" aria-label="Data Set WORK.YELLOW">
+<caption aria-label="Data Set WORK.YELLOW"></caption>
+<colgroup><col/></colgroup><colgroup><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="r header" scope="col">Obs</th>
+<th class="r header" scope="col">Year</th>
+<th class="r header" scope="col">Yellow_Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r rowheader" scope="row">1</th>
+<td class="r data">2014</td>
+<td class="r data">3168</td>
+</tr>
+</tbody>
+</table>
+</article>
+</section>
+<section data-name="Print" data-sec-type="proc">
+<hr class="pagebreak"/>
+<div id="IDX16" class="systitleandfootercontainer" style="border-spacing: 1px">
+<p><span class="c systemtitle">The total sales in 2013 and 2014</span> </p>
+</div>
+<h1 class="contentprocname toc">The Print Procedure</h1>
+<article aria-label="Data Set WORK.SALES">
+<h1 class="contentitem toc">Data Set WORK.SALES</h1>
+<table class="table" style="border-spacing: 0" aria-label="Data Set WORK.SALES">
+<caption aria-label="Data Set WORK.SALES"></caption>
+<colgroup><col/></colgroup><colgroup><col/><col/></colgroup>
+<thead>
+<tr>
+<th class="r header" scope="col">Obs</th>
+<th class="r header" scope="col">Year</th>
+<th class="r header" scope="col">Total_Sales</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r rowheader" scope="row">1</th>
+<td class="r data">2013</td>
+<td class="r data">4050183.85</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">2</th>
+<td class="r data">2014</td>
+<td class="r data">85708365.02</td>
+</tr>
+</tbody>
+</table>
+</article>
+</section>
+</div>
+</body>
+</html>
